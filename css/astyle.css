@@ -6,5 +6,6 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
 body{font-family: 'Lato', sans-serif;line-height: 1.5;position: relative;}
-header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;background-color: #0A0A0A;}
-
+header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;background-color: #99999994;padding: 5px 0;}
+.ap__logoDiv{width: 180px;}
+.ap__logoDiv img{max-width: 100%;}
