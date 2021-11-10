@@ -15,23 +15,33 @@
     <header class="col-100 floatLft flexDisplay justifyCenter">
         <div class="wrapper">
             <div class="headWrp col-100 floatLft flexDisplay alignCenter justifySpace">
-                <div class="ap__logoDiv"><a href="javascript:;"><img src="./images/logo-1.png" alt="Logo" /></a></div>
-                <nav>
+                <div class="ap__logoDiv floatLft"><a href="javascript:;"><img src="./images/logo-1.png" alt="Logo" /></a></div>
+                <nav class="floatRgt">
                     <ul class="ap__navigation">
-                        <li class="ap__navLinks active">
+                        <li class="ap__navLinks inlineBlk active">
                             <a href="javascript:;" class="ap__navClick">Home</a>
                         </li>
-                        <li class="ap__navLinks active">
+                        <li class="ap__navLinks inlineBlk">
                             <a href="javascript:;" class="ap__navClick">About us</a>
                         </li>
-                        <li class="ap__navLinks active">
-                            <a href="javascript:;" class="ap__navClick">Compaign</a>
+                        <li class="ap__navLinks ap__dropParent inlineBlk relative">
+                            <a href="javascript:;" class="ap__navClick">Compaign <i class="fa fa-angle-down"></i></a>
+                            <div class="ap__dropMenu absolute">
+                                <div class="ap__emptyHeight col-100 floatLft"></div>
+                                <div class="ap__dropInner col-100 floatLft">
+                                    <a href="javascript:;" class="ap__dropInnerLink">Campaign Details</a>
+                                    <a href="javascript:;" class="ap__dropInnerLink">Campaign Gallery</a>
+                                </div>
+                            </div>
                         </li>
-                        <li class="ap__navLinks active">
+                        <li class="ap__navLinks inlineBlk">
                             <a href="javascript:;" class="ap__navClick">Pages</a>
                         </li>
-                        <li class="ap__navLinks active">
+                        <li class="ap__navLinks inlineBlk">
                             <a href="javascript:;" class="ap__navClick">Contact us</a>
+                        </li>
+                        <li class="ap__navLinks inlineBlk">
+                            <a href="javascript:;" class="ap__navClick ap__navButton">Donate</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,7 +49,19 @@
         </div>
     </header>
 
-
+    <section class="ap__hompage__banner col-100 floatLft">
+        <div class="ap__banner__slider col-100 floatLft">
+            <div class="ap__banner__image relative">
+                <img src="./images/young-volunteers-planting-trees-in-green-park-together.jpg" alt="" />
+            </div>
+            <div class="ap__banner__image relative">
+                <img src="./images/young-volunteers-with-recycling-box-cleaning-lawn-together.jpg" alt="" />
+            </div>
+            <div class="ap__banner__image relative">
+                <img src="./images/group-of-volunteer-with-sprout-for-growing.jpg" alt="" />
+            </div>
+        </div>
+    </section>
 
     <script src="./js/jQuery/jquery-3.6.min.js"></script>
     <script src="./js/slick-slider/slick.min.js"></script>
