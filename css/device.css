@@ -1,0 +1,151 @@
+@media only screen and (min-width: 1750px) {
+    
+}
+@media only screen and (max-width: 1700px) {
+
+}
+@media only screen and (max-width: 1600px) {
+  
+}
+
+@media only screen and (max-width: 1536px) {
+  
+}
+@media only screen and (max-width: 1500px) {
+    .sub__menu__block{transform: translateX(-50%);}
+}
+
+@media screen and (max-width:1400px){
+    .footerWrp{max-width: 1280px;}
+    section{padding:50px 0 30px;}
+    .common__heading{font-size:45px;}
+    .career__marketingWrp .innerCard .card__title {font-size: 22px;}
+    .common__small-heading{font-size:28px;}
+    .sub__menu__block{max-width: 1250px;}
+    .tab__parent{margin-top:34px;}
+    .career-sec .careerHead{font-size:26px;}
+    .bg_white{padding-top:60px;}
+
+}
+@media only screen and (max-width: 1300px) {
+    .footerWrp{padding: 0 40px;}
+    .headWrp{padding:10px 30px 5px;}
+    .nav-menu li{margin:0 12px;}
+
+}
+@media only screen and (max-width: 1200px) {
+  
+}
+@media only screen and (max-width: 1100px) {
+    .innerMenuWrp{width:100%;}
+    .courseWrp p.w80{width:100%;}
+    .catalougeList{width:85%;}
+    .courseTopics{width:62%;}
+
+}
+
+@media only screen and (max-width: 950px) {
+    .career__marketingWrp .innerCard{width: calc(50% - 25px);}
+    .common_width{padding-right: 20%;}
+    .footLogo{width:50%;}
+    .nav-menu li{margin: 0 2px;}
+    .career__trackWrp .common__para{width:100%;}
+    .coursesInner{width:75%;}
+    .common__small-heading br{display: none;}
+    .directorInfo{width: 100%;}
+    .contact__info .infoTitle {font-size: 24px;}
+    .addressWrp .designationWrp{font-size:20px;}
+    .addressWrp .nameWrp{font-size:15px;}
+
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-menu li a{font-size: 14px;}
+    .roleSkills{margin-top:50px;}
+    .roleTab li a{font-size:13px;}
+    .roleInnerCnt li{font-size:12px;}
+    .carrerCourseWrp{margin:44px 0 0px;}
+    .catalougeList{width:100%;}
+    .catalougeList{margin-top: 15px;}
+    .catalougeList li .catDesc .catHead{font-size:20px;margin-bottom:15px;}
+    .catalougeList li:last-child{margin-bottom: 0;}
+    .accordion-thumb{font-size: 20px;}
+    .accordion-thumb::after{width: 20px;height: 20px;}
+    .courseTopics{width:100%;}
+
+}
+
+@media only screen and (max-width: 750px) {
+    nav{padding:0;width:auto;position:absolute;right:0;}
+    .nav-menu{width:100%;height:0% !important;display:block !important;position:fixed;left:0;background:rgba(35,33,33,1);top:0;padding-right:0;overflow-y:auto;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;transition:all .3s;z-index:1;display:none;}
+
+    .navigation.nav-open{height:100% !important;padding: 18% 0px 0;}
+    .navigation li{width:100%;margin: 0;padding:20px 0px 20px 40px;border-top: 1px solid rgba(255, 255, 255, 0.2);}
+    .navigation li a{float:left;font-size:18px;text-align:left;font-weight: 400;position: relative;display: block;}
+    .navigation li:last-child{border-bottom:1px solid rgba(255, 255, 255, 0.2)}
+    .res_navigation{width:30px;display:block;top:-15px;right:20px;}
+    .sub__menu__block{display: none !important;}
+    .nav-link.drop-down.desk{display: none;}
+    .nav-link.drop-down.mob{display:block;padding:20px 0px 20px 40px;float: left;}
+    .coursesInner li{width: calc(50% - 30px);}
+    .coursesInner{width:100%;}
+    .roleTab li.current a{border: none;color: #F6A30A;}
+    .roleTab li:hover a{border: none;color: #F6A30A;}
+
+}
+
+@media only screen and (max-width: 640px) {
+    .common__heading{font-size:35px;}
+    .common__para{font-size: 15px;}
+    .common__link{font-size: 15px;}
+    .common_width{padding-left: 10%;padding-right: 0;}
+    .section-1__link{padding-left: 10%;}
+}
+@media only screen and (max-width: 550px) {
+    
+
+}   
+@media only screen and (max-width: 450px) {
+    .navigation.nav-open{padding:18% 0 0;}
+    .padding20{padding-left: 5%;}
+    .career__marketingWrp .innerCard{width:100%;margin-bottom:25px;}
+    .career__marketingWrp .innerCard p{margin-bottom: 12px;}
+    .footerWrp{flex-flow: row wrap;}
+    .footLogo{width: 100%;text-align: center !important;float: left !important;}
+    .footLinks{text-align: center !important;margin-top: 25px;}
+    .socialDiv{margin-top: 20px;text-align: center !important;}
+    .common__small-heading{font-size: 22px;}
+    .footerWrp{padding:0 15px;}
+    .tab__parent{margin-top:45px;}
+    .market_parent span{font-size: 13px;}
+    .car-hed h3{font-size:15px;margin-bottom:8px;}
+    .car-pare h3{font-size:15px;margin-bottom:10px;}
+    .career-sec .careerHead{font-size: 22px;}
+    .tabList li{margin-right:5px;font-size:12px;}
+    .logoDiv{width:210px;}
+    .headWrp{padding:10px 10px 5px;}
+    .coursesInner li p{height:80 px;font-size:13px;}
+    .contact__info .infoTitle{font-size: 22px;padding-bottom: 30px;}
+    .contact__info .infoTitle br{display: none;}
+    .contact__info{padding:35px 0 0;}
+    .greyBG{padding: 0 10px;}
+    .formWrp{padding: 32px 20px;}
+    .addressWrp{width: 100%;margin-bottom: 30px;}
+    .directorInfo{margin-top: 30px;}
+}
+@media only screen and (max-width: 420px) {
+  
+}
+@media only screen and (max-width: 400px) {
+    
+}
+@media only screen and (max-width: 375px) {
+
+}
+@media only screen and (max-width: 360px) {
+    .accordion-thumb{font-size:16px;}
+}
+
+@media only screen and (max-width: 320px) {
+  
+}

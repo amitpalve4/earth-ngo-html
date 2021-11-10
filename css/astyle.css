@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900');
+
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+body{font-family: 'Lato', sans-serif;line-height: 1.5;position: relative;}
+header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;background-color: #0A0A0A;}
+
