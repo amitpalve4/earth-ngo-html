@@ -13,14 +13,21 @@ header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;bac
 .ap__navigation .ap__navLinks a{color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;}
 .ap__navigation .ap__navLinks a i{font-size: 20px;display: inline-block;vertical-align: middle;margin-bottom: 2px;margin-left: 5px;}
 .ap__navigation .ap__navLinks a.ap__navButton{border-radius:5px 5px 5px 5px;padding:13px 32px 13px 32px;color: #fff;background-color: #FF6F00;transition: all 0.3s ease;}
-
-.ap__navigation .ap__navLinks:not(:last-child) a.ap__navClick:hover{color: #FF6F00;}
-.ap__navigation .ap__navLinks.active a.ap__navClick{color: #FF6F00;}
-.ap__banner__slider img{max-width: 100%;}
-.ap__banner__image::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.6);width: 100%;height: 100%;}
 .ap__emptyHeight{height: 20px;}
 .ap__dropMenu{position: absolute;left: -40px;top: 100%;display: block;min-width:220px;transition: all 0.4s ease;visibility: hidden; opacity: 0;}
 .ap__dropInner{padding:10px 15px 10px 15px;background-color:#79797985;border-radius:0px 0px 10px 10px;min-width:220px;box-shadow:0px 0px 0px 0px rgb(0 0 0 / 50%);}
 .ap__dropInner a{color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;margin: 10px 0;display: block;}
 .ap__dropInner a:hover{color: #FF6F00;}
 .ap__navigation .ap__navLinks.ap__dropParent:hover .ap__dropMenu{visibility: visible;opacity: 1;}
+
+.ap__navigation .ap__navLinks:not(:last-child) a.ap__navClick:hover{color: #FF6F00;}
+.ap__navigation .ap__navLinks.active a.ap__navClick{color: #FF6F00;}
+.ap__banner__slider img{max-width: 100%;}
+.ap__banner__image::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.6);width: 100%;height: 100%;z-index: 1;}
+.ap__bannerContent{max-width: 640px;width: 100%;display: block;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 5;}
+.ap__bigFnt{font-size: 62px;line-height: 1;color: #fff;}
+.ap__bannerTitle span{color: #FF6F00;}
+.ap__bannerPara{color: #fff;margin: 15px 0 60px;}
+.ap__contentWrp .ap__common_button{padding: 16px 30px;letter-spacing: 1px;border-radius: 10px;}
+section{margin: 80px 0;}
+.ap__m0{margin: 0;}
