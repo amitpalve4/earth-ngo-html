@@ -27,6 +27,19 @@ $(document).ready(function(){
     });
   }
 
+  if($('.ap__teamListing').length > 0){
+    $('.ap__teamListing').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 1500,
+
+    });
+  }
+
 });
 
 

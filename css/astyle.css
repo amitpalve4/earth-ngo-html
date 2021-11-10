@@ -6,17 +6,18 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
 body{font-family: 'Lato', sans-serif;line-height: 1.5;position: relative;font-weight: 400;}
-header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;background-color: #99999994;padding: 5px 0;}
+header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;background-color: #99999994;padding: .3125rem 0;}
+/* header.sticky{background-color: #999;} */
 .ap__logoDiv{width: 180px;}
 .ap__logoDiv img{max-width: 100%;}
-.ap__navigation .ap__navLinks{margin: 0 18px;}
+.ap__navigation .ap__navLinks{margin: 0 1.125rem;}
 .ap__navigation .ap__navLinks a{color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;}
-.ap__navigation .ap__navLinks a i{font-size: 20px;display: inline-block;vertical-align: middle;margin-bottom: 2px;margin-left: 5px;}
-.ap__navigation .ap__navLinks a.ap__navButton{border-radius:5px 5px 5px 5px;padding:13px 32px 13px 32px;color: #fff;background-color: #FF6F00;transition: all 0.3s ease;}
+.ap__navigation .ap__navLinks a i{font-size: 1.25rem;display: inline-block;vertical-align: middle;margin-bottom: .125rem;margin-left: .3125rem;}
+.ap__navigation .ap__navLinks a.ap__navButton{border-radius:.3125rem .3125rem .3125rem .3125rem;padding:.8125rem 2rem .8125rem 2rem;color: #fff;background-color: #FF6F00;transition: all 0.3s ease;}
 .ap__emptyHeight{height: 20px;}
 .ap__dropMenu{position: absolute;left: -40px;top: 100%;display: block;min-width:220px;transition: all 0.4s ease;visibility: hidden; opacity: 0;}
-.ap__dropInner{padding:10px 15px 10px 15px;background-color:#79797985;border-radius:0px 0px 10px 10px;min-width:220px;box-shadow:0px 0px 0px 0px rgb(0 0 0 / 50%);}
-.ap__dropInner a{color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;margin: 10px 0;display: block;}
+.ap__dropInner{padding:.625rem .9375rem .625rem .9375rem;background-color:#79797985;border-radius:0px 0px 10px 10px;min-width:220px;box-shadow:0px 0px 0px 0px rgb(0 0 0 / 50%);}
+.ap__dropInner a{color: #fff;font-size: .875rem;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;margin: 10px 0;display: block;}
 .ap__dropInner a:hover{color: #FF6F00;}
 .ap__navigation .ap__navLinks.ap__dropParent:hover .ap__dropMenu{visibility: visible;opacity: 1;}
 
@@ -25,9 +26,53 @@ header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;bac
 .ap__banner__slider img{max-width: 100%;}
 .ap__banner__image::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.6);width: 100%;height: 100%;z-index: 1;}
 .ap__bannerContent{max-width: 640px;width: 100%;display: block;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 5;}
-.ap__bigFnt{font-size: 62px;line-height: 1;color: #fff;}
+.ap__bigFnt{font-size: 3.875rem;line-height: 1;color: #fff;}
 .ap__bannerTitle span{color: #FF6F00;}
-.ap__bannerPara{color: #fff;margin: 15px 0 60px;}
-.ap__contentWrp .ap__common_button{padding: 16px 30px;letter-spacing: 1px;border-radius: 10px;}
-section{margin: 80px 0;}
+.ap__bannerPara{color: #fff;margin: .9375rem 0 3.75rem;}
+.ap__contentWrp .ap__common_button{padding: 1rem 1.875rem;letter-spacing: 1px;border-radius: 10px;}
+section{margin: 4rem 0;}
 .ap__m0{margin: 0;}
+.ap__movementSect .ap__common__para{margin-top: .9375rem;margin-bottom: 3.125rem;}
+.ap__cardsList li{width: calc(33.33% - 20px);display: inline-block;}
+.ap__cardItem{text-align:center;padding:1.875rem 1.875rem 0rem 1.875rem;border-style:solid;border-width:1px 1px 1px 1px;border-color:#EAEAEA;border-radius:10px 10px 10px 10px; transition: all 0.4s ease;}
+.ap__cardItem .ap__cardLink{margin: .9375rem 0 1.25rem;display: inline-block;color: #FF6F00;transition: all 0.4s ease;}
+.ap__cardItem .ap__ico{width: 50px;height: 50px;text-align: center;display: inline-block;transition: all 0.4s ease;}
+.ap__cardItem .ap__cardTitle{color: #002D12;margin: .9375rem 0 1.5rem;font-size: 1.75rem;line-height: 1.1;transition: all 0.4s ease;}
+.ap__cardItem .ap__ico img{max-width: 100%;display: inline-block;}
+.ap__cardItem .ap__cardDesc{transition: all 0.4s ease;margin-bottom: 0;}
+/* .ap__cardsList li:hover .ap__cardItem{background-color: #FF6F00;}
+.ap__cardsList li:hover .ap__cardItem .ap__cardTitle{color: #fff;}
+.ap__cardsList li:hover .ap__cardItem .ap__cardDesc{color: #fff;}
+.ap__cardsList li:hover .ap__cardItem .ap__cardLink{visibility: visible;opacity: 1;}
+.ap__cardsList li:hover .ap__cardItem .ap__ico{display: none;} */
+
+.ap__storyWrp .ap__storyImg{width: calc(55% - 40px);float: left;}
+.ap__storyWrp .ap__storyImg img{max-width: 100%;border-radius: 15px;}
+.ap__storyWrp .ap__storyCnt{width: calc(45% - 40px);float: left;text-align: left;}
+.ap__storyWrp .ap__storyCnt .ap__common__para{margin: 1.25rem 0;}
+.ap__storyBullets{padding-left: 22px;}
+.ap__storyBullets li{width: calc(50% - 10px);display: inline-block;text-align: left;margin: 0 0 .6rem !important;position: relative;}
+.ap__storyBullets li::before{content:'';display:inline-block;vertical-align:middle;margin-right:12px;margin-left:-1.2em;width:12px;height:3px;background-color:#FF6F00; }
+.ap__actionDiv{margin-top: 20px;}
+.ap__actionDiv .ap__common_button{padding: 14px 30px;}
+.ap__actionDiv span{font-weight: 700;font-size: 18px;}
+.ap__videoPlay{width: 45%;}
+.ap__videoPlay .ap__playIco{display: flex;width: 60px;height: 60px;border-radius: 50px;background-color:rgb(255, 111, 0);animation: ripple 2s linear infinite;justify-content: center;align-items: center;transition: all 0.7s ease;}
+.ap__videoPlay .ap__playIco img{max-width: 100%;display: inline-block;margin-left: 5px;}
+
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 111, 0, 0.5), 0 0 0 1px rgba(255, 111, 0, 0.5), 0 0 0 3px rgba(255, 111, 0, 0.5), 0 0 0 5px rgba(255, 111, 0, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 111, 0, 0.5), 0 0 0 4px rgba(255, 111, 0, 0.5), 0 0 0 20px rgba(255, 255, 255, 0), 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+}
+
+.ap__mt15{margin-top: 15px;}
+.ap__teamListing{margin-top: 40px;}
+.ap__teamListing li{margin: 0 15px;}
+.ap__teamListing li .ap__teamCard .ap__teamImage img{max-width: 100%;}
+.ap__teamListing li .ap__teamCard .ap__teamName{font-weight: 700;}
+.ap__storyAbs{width: 400px;left: 40px;top: -70px;}
+.ap__storyAbs img{max-width: 100%;}
