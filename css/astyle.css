@@ -11,7 +11,7 @@ header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;bac
 .ap__logoDiv img{max-width: 100%;}
 .ap__navigation .ap__navLinks{margin: 0 18px;}
 .ap__navigation .ap__navLinks a{color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;}
-.ap__navigation .ap__navLinks a i{font-size: 20px;display: inline-block;vertical-align: middle;margin-bottom: 2px;}
+.ap__navigation .ap__navLinks a i{font-size: 20px;display: inline-block;vertical-align: middle;margin-bottom: 2px;margin-left: 5px;}
 .ap__navigation .ap__navLinks a.ap__navButton{border-radius:5px 5px 5px 5px;padding:13px 32px 13px 32px;color: #fff;background-color: #FF6F00;transition: all 0.3s ease;}
 
 .ap__navigation .ap__navLinks:not(:last-child) a.ap__navClick:hover{color: #FF6F00;}
