@@ -32,18 +32,7 @@
   padding:0rem 2.5rem 0rem 0rem;
 
 }
-.np-contentSec--innerLft ul li{
-  padding-bottom:calc(10px / 2);
-}
-.np-contentSec--innerLft ul li{
-  margin-top:calc(10px / 2);
-	padding-bottom:calc(10px / 2);
 
-}
-.np-contentSec--innerLft ul li:not(:first-child){
-  margin-top:calc(10px / 2);
-
-}
 .mar--b{
   margin-bottom: 1.25rem !important;
 }
@@ -64,5 +53,20 @@
 .gry{
   color: #6F747E;
   padding-left:.3125rem;
+
+}
+.paa-b{
+  padding-bottom:calc(10px /2);
+}
+.mar-t{
+  margin-top:calc(10px/2);
+
+}
+.np-contentSec--innerLftWrp{
+  margin:0rem .9375rem 0rem 0rem;
+
+}
+.np-contentSec--innerRgtWrp{
+  margin:0rem 0rem 0rem .9375rem;
 
 }
