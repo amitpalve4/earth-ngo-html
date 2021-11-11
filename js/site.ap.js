@@ -142,15 +142,16 @@ $(document).ready(function(){
     return false; 
   });
 
-  $('.popup-youtube').magnificPopup({
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+  if($('.popup-youtube').length > 0){
+    $('.popup-youtube').magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
 
-		fixedContentPos: false
-	});
-
+      fixedContentPos: false
+    });
+  }
 });
 
 
