@@ -8,14 +8,15 @@
     <link rel="icon" href="./images/thumb.png" sizes="32x32">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./js/slick-slider/slick.css">
+    <link rel="stylesheet" href="./js/magnific/magnific-popup.css">
     <link rel="stylesheet" href="./css/init.css">
     <link rel="stylesheet" href="./css/astyle.css">
 </head>
 <body>
-    <header class="col-100 floatLft flexDisplay justifyCenter">
+    <header class="col-100 floatLft flexDisplay justifyCenter deskHeader">
         <div class="wrapper">
             <div class="headWrp col-100 floatLft flexDisplay alignCenter justifySpace">
-                <div class="ap__logoDiv floatLft"><a href="javascript:;"><img src="./images/logo-1.png" alt="Logo" /></a></div>
+                <div class="ap__logoDiv floatLft"><a href="index.html"><img src="./images/logo-1.png" alt="Logo" /></a></div>
                 <nav class="floatRgt">
                     <ul class="ap__navigation">
                         <li class="ap__navLinks inlineBlk active">
@@ -58,16 +59,72 @@
         </div>
     </header>
 
+    <div class="headerMob">
+        <div class="logoDiv">
+            <a href="index.html"><img src="./images/logo-1.png" alt=""></a>  
+        </div>
+        <span class="toggle-button">
+            <div class="menu-bar menu-bar-top"></div>
+            <div class="menu-bar menu-bar-middle"></div>
+            <div class="menu-bar menu-bar-bottom"></div>
+        </span>
+       
+        <div class="menu-wrap">
+            <div class="menu-sidebar">
+                <div class="navMenu">
+                    <ul class="navMenu">
+                        <li class="ap__navLinks inlineBlk mainDrop">
+                            <a href="javascript:;" class="ap__navClick active">Home</a>
+                        </li>
+                        <li class="ap__navLinks inlineBlk mainDrop">
+                            <a href="javascript:;" class="ap__navClick">About us</a>
+                        </li>
+                        <li class="ap__navLinks ap__dropParent inlineBlk relative mainDrop">
+                            <a href="javascript:;" class="ap__navClick">Compaign <i class="fa fa-angle-down"></i></a>
+                            <div class="ap__dropMenu ap__mobile relative">
+                                <div class="ap__dropInner col-100 floatLft">
+                                    <a href="javascript:;" class="ap__dropInnerLink">Campaign Details</a>
+                                    <a href="javascript:;" class="ap__dropInnerLink">Campaign Gallery</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ap__navLinks ap__dropParent inlineBlk relative mainDrop">
+                            <a href="javascript:;" class="ap__navClick">Pages <i class="fa fa-angle-down"></i></a>
+                            <div class="ap__dropMenu ap__mobile relative">
+                                <div class="ap__dropInner col-100 floatLft">
+                                    <a href="javascript:;" class="ap__dropInnerLink">FAQ</a>
+                                    <a href="javascript:;" class="ap__dropInnerLink">Privacy Policy</a>
+                                    <a href="javascript:;" class="ap__dropInnerLink">Terms & Conditions</a>
+                                    <a href="javascript:;" class="ap__dropInnerLink">News</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ap__navLinks inlineBlk mainDrop">
+                            <a href="javascript:;" class="ap__navClick">Contact us</a>
+                        </li>
+                        <li class="ap__navLinks inlineBlk">
+                            <a href="javascript:;" class="ap__navClick ap__navButton">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+
     <section class="ap__hompage__banner ap__m0 col-100 floatLft relative">
         <div class="ap__banner__slider col-100 floatLft">
-            <div class="ap__banner__image relative">
-                <img src="./images/young-volunteers-planting-trees-in-green-park-together.jpg" alt="" />
+            <div class="ap__banner__image ap__banner__1 relative">
+                <img src="./images/young-volunteers-planting-trees-in-green-park-together.jpg" class="ap__desk__banner" alt="" />
+                <img src="./images/img-01.jpg" class="ap__mob__banner" alt="" />
             </div>
-            <div class="ap__banner__image relative">
-                <img src="./images/young-volunteers-with-recycling-box-cleaning-lawn-together.jpg" alt="" />
+            <div class="ap__banner__image ap__banner__1 relative">
+                <img src="./images/young-volunteers-planting-trees-in-green-park-together.jpg" class="ap__desk__banner" alt="" />
+                <img src="./images/img-02.jpg" class="ap__mob__banner" alt="" />
             </div>
-            <div class="ap__banner__image relative">
-                <img src="./images/group-of-volunteer-with-sprout-for-growing.jpg" alt="" />
+            <div class="ap__banner__image ap__banner__1 relative">
+                <img src="./images/young-volunteers-planting-trees-in-green-park-together.jpg" class="ap__desk__banner" alt="" />
+                <img src="./images/img-03.jpg" class="ap__mob__banner" alt="" />
             </div>
         </div>
         <div class="ap__bannerContent absolute">
@@ -140,7 +197,7 @@
                     <div class="ap__actionDiv col-90 floatLft textLeft flexDisplay justifySpace alignCenter">
                         <a href="javascript:;" class="ap__common_button">READ MORE</a>
                         <div class="ap__videoPlay flexDisplay justifySpace alignCenter">
-                            <a href="javascript:;" class="ap__playIco"><img src="./images/play.png" alt=""></a>
+                            <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="ap__playIco popup-youtube"><img src="./images/play.png" alt=""></a>
                             <span>Watch Video</span>
                         </div>
                     </div>
@@ -292,12 +349,157 @@
                 </div>
                 <a href="javascript:;" class="ap__viewmoreClick ap__common_button">VIEW MORE</a>
             </div>
+            <ul class="ap__campaignListing col-100 floatLft flexDisplay justifySpace alignStart flexWrap">
+                <li>
+                    <div class="ap__campaignWrp ap__camp__1 col-100 floatLft flexDisplay flexColumn textLeft">
+                        <div class="ap__innerSpace col-100 floatLft"></div>
+                        <div class="ap__campaignData floatLft">
+                            <h2 class="ap__campaignHead ap__common__heading">Green Planet</h2>
+                            <p class="ap__common__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
+                            <a href="javascript:;" class="ap__takeAction">TAKE ACTION</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ap__campaignWrp ap__camp__2 col-100 floatLft flexDisplay flexColumn textLeft">
+                        <div class="ap__innerSpace col-100 floatLft"></div>
+                        <div class="ap__campaignData floatLft">
+                            <h2 class="ap__campaignHead ap__common__heading">Green Energy</h2>
+                            <p class="ap__common__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
+                            <a href="javascript:;" class="ap__takeAction">TAKE ACTION</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ap__campaignWrp ap__camp__3 col-100 floatLft flexDisplay flexColumn textLeft">
+                        <div class="ap__innerSpace col-100 floatLft"></div>
+                        <div class="ap__campaignData floatLft">
+                            <h2 class="ap__campaignHead ap__common__heading">Clean Beach</h2>
+                            <p class="ap__common__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
+                            <a href="javascript:;" class="ap__takeAction">TAKE ACTION</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ap__campaignWrp ap__camp__4 col-100 floatLft flexDisplay flexColumn textLeft">
+                        <div class="ap__innerSpace col-100 floatLft"></div>
+                        <div class="ap__campaignData floatLft">
+                            <h2 class="ap__campaignHead ap__common__heading">Free River</h2>
+                            <p class="ap__common__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
+                            <a href="javascript:;" class="ap__takeAction">TAKE ACTION</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="ap__section__7 col-100 floatLft flexDisplay justifyCenter">
+        <div class="wrapper">
+            <div class="ap__volunteerWrp col-100 floatLft textCenter">
+                <h2 class="ap__common__heading orange-color col-100 floatLft">Become Our Volunteer</h2>
+                <p class="ap__common__para ap__whtPara col-100 floatLft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget <br> dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</p>
+                <div class="ap__joinDiv col-100 floatLft">
+                    <a href="javascript:;" class="ap__joinClick ap__common_button inlineBlk">JOIN VOLUNTEER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ap__section__8 col-100 floatLft flexDisplay justifyCenter">
+        <div class="wrapper">
+            <div class="ap__newsLetterWrp col-100 floatLft flexDisplay justifySpace alignCenter flexWrap">
+                <div class="ap__newsLetterHead flexDisplay justifyStart alignCenter">
+                    <div class="ap__mailIco"><img src="./images/email.png" alt=""></div>
+                    <div class="ap__mailTitle">
+                        <span>Keep Updated</span>
+                        <h2 class="ap__common__heading ap__whtPara">Newsletter</h2>
+                    </div>
+                </div>
+                <div class="ap__formSubscribe">
+                    <div class="ap__inputDiv">
+                        <input type="text" class="ap__textInput col-100 floatLft" placeholder="Email">
+                    </div>
+                    <div class="ap__buttonDiv">
+                        <button><i class="fa fa-paper-plane" aria-hidden="true"></i> SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
             
         </div>
     </section>
 
+    <footer class="col-100 floatLft flexDisplay justifyCenter">
+        <div class="wrapper">
+            <div class="ap__footInner col-100 floatLft flexDisplay justifySpace alignStart flexWrap">
+                <div class="ap__footLogo">
+                    <div class="logoDiv"><img src="./images/logo-1.png" alt=""></div>
+                    <p class="ap__whtPara ap__common__para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="ap__footMenuWrp">
+                    <div class="ap__footMenu">
+                        <h3 class="ap__footHead">Quick Links</h3>
+                        <ul class="ap__footNav col-100 floatLft">
+                            <li>
+                                <a href="javascript:;">Home</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">About us</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Destination</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ap__footMenu">
+                        <h3 class="ap__footHead">Other Pages</h3>
+                        <ul class="ap__footNav col-100 floatLft">
+                            <li>
+                                <a href="javascript:;">Privacy & Policy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ap__footMenu">
+                        <h3 class="ap__footHead">Contact Info</h3>
+                        <ul class="ap__footNav col-100 floatLft">
+                            <li class="flexDisplay justifyStart alignStart">
+                                <div class="ap__footIco"><img src="./images/map.png" alt=""></div>
+                                <div class="ap__addText ap__whtPara">301, 3rd Floor,Tirupati Co-operative Housing Society Ltd, Opp. Mumbai University Main Gate, Vidyanagari Marg, (CST Road), Kalina, Santacruz (East), Mumbai - 400 098.</div>
+                            </li>
+                            <li class="flexDisplay justifyStart alignCenter">
+                                <div class="ap__footIco"><img src="./images/call.png" alt=""></div>
+                                <div class="ap__addText"><a href="tel:+91 84969 84969">+91 84969 84969</a></div>
+                            </li>
+                            <li class="flexDisplay justifyStart alignCenter">
+                                <div class="ap__footIco"><img src="./images/email-small.png" alt=""></div>
+                                <div class="ap__addText"><a href="mailto:connect@earthngo.org">connect@earthngo.org</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ap__footCopy col-100 floatLft flexDisplay justifySpace">
+                <p class="ap__whtPara">Environmental & NGO Template Kit by Jegtheme</p>
+                <p class="ap__whtPara">© 2021. Company Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="./js/jQuery/jquery-3.6.min.js"></script>
     <script src="./js/slick-slider/slick.min.js"></script>
+    <script src="./js/magnific/jquery.magnific-popup.min.js"></script>
     <script src="./js/site.ap.js"></script>
 </body>
 </html>

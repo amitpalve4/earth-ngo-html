@@ -23,7 +23,46 @@ header.sticky{background-color: #999;}
 
 .ap__navigation .ap__navLinks:not(:last-child) a.ap__navClick:hover{color: #FF6F00;}
 .ap__navigation .ap__navLinks.active a.ap__navClick{color: #FF6F00;}
+
+.headerMob{display: none;position: fixed;-webkit-transition: all 0.4s ease;height: 70px;z-index: 999;width: 100%;background-color: #99999994;}
+.headerMob .logoDiv{position: absolute;left: 5px;top: 50%; transform: translateY(-50%); width: 150px;}
+.headerMob .logoDiv img{max-width: 100%;}
+.headerMob.sticky{background-color: #999;; transition: all 0.4s ease; z-index: 40; top: 0; left: 0;width: 100%;padding: 5px 15px;-webkit-box-shadow: 0px -1px 5px -2px rgba(0,0,0,0.75);-moz-box-shadow: 0px -1px 5px -2px rgba(0,0,0,0.75);box-shadow: 0px -1px 5px -2px rgba(0,0,0,0.75); }
+
+.menu-wrap {background-color: #002D12;position: fixed;	top: 0;	height: 100%;	width: 280px;	margin-right: -280px;	font-size: 1em;	font-weight: 700;	overflow: auto;	transition: .25s;	z-index: 10;right: 0;text-align: left;}
+.menu-show {margin-right: 0;	box-shadow: 4px 2px 15px 1px #B9ADAD;}
+.menu-sidebar {	margin: 20px 20px 80px 25px;position: relative;top: 40px;}
+.menu-sidebar li {padding: 10px 0px;position: relative;width: 100%;float: left;margin: 0 !important;}
+.menu-sidebar li > a {color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;width: 80%;display: block;}
+.menu-sidebar .menu-item-has-children {	position: relative;}
+.menu-sidebar .menu-item-has-children .sub-menu {	display: none;}
+.menu-sidebar li > a i{position: absolute;right: 50px;top: 10px;font-size: 22px;}
+.sidebar-menu-arrow::after {content: "\f107";font-family: 'FontAwesome';padding: 10px;color: #FFFA3B;position: relative;}
+.sidebar-menu-arrow:hover::after {cursor: pointer;	color: #fff;}
+.sidebar-menu-arrow:active::after {	top: 2px;}
+
+.menu-sidebar li > a:hover{color: #FF6F00;}
+.menu-sidebar li > a.active{color: #FF6F00;}
+.ap__dropMenu.ap__mobile{position: static;visibility: visible;opacity: 1;display: none;margin-top: 10px;}
+
+/*Hamburger Button*/
+.toggle-button {position: fixed;width: 38px;height: 40px;top: 24px;right: 15px;	padding: 4px;transition: .25s;z-index: 15;}
+.toggle-button:hover {cursor: pointer;}
+.toggle-button .menu-bar {position: absolute;border-radius: 2px;width: 80%;	transition: .5s;}
+.toggle-button .menu-bar-top {border: 3px solid #fff;border-bottom: none;top: 0;}
+.toggle-button .menu-bar-middle {height: 3px;background-color: #fff;margin-top: 7px;margin-bottom: 7px;top: 2px;}
+.toggle-button .menu-bar-bottom {border: 3px solid #fff;	border-top: none;top: 18px;}
+.button-open {right: 25px;}
+.button-open .menu-bar-top {border-color: #fff;	transform: rotate(45deg) translate(8px, 8px);transition: .5s;}
+.button-open .menu-bar-middle {	background-color: #fff;	transform: translate(-230px);	transition: .1s ease-in;	opacity: 0;}
+.button-open .menu-bar-bottom {	border-color: #fff;	transform: rotate(-45deg) translate(7px, -7px);	transition: .5s;top: 22px;}
+
+/* .ap__banner__1{background: url(../images/young-volunteers-planting-trees-in-green-park-together.jpg) no-repeat center center/cover;}
+.ap__banner__2{background: url(../images/young-volunteers-with-recycling-box-cleaning-lawn-together.jpg) no-repeat center center/cover;}
+.ap__banner__3{background: url(../images/group-of-volunteer-with-sprout-for-growing.jpg) no-repeat center center/cover;} */
+
 .ap__banner__slider img{max-width: 100%;}
+.ap__banner__image img.ap__mob__banner{display: none;}
 .ap__banner__image::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.6);width: 100%;height: 100%;z-index: 1;}
 .ap__bannerContent{max-width: 640px;width: 100%;display: block;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 5;}
 .ap__bigFnt{font-size: 3.875rem;line-height: 1;color: #fff;}
@@ -114,3 +153,124 @@ to{transform:translate3d(0,0,0);opacity:1}
 .ap__viewMore{margin-top: 3.75rem;}
 .ap__viewMore .ap__viewmoreClick{padding: 16px 30px;}
 .ap__headDiv .ap__campHead{width: 60%;}
+.ap__campaignListing{margin-top: 40px;}
+.ap__campaignListing li{width: calc(25% - 15px);display: inline-block;}
+.ap__campaignData{padding: 20px;background-color: #fff;border-top-right-radius: 20px;width: 85%;position: relative;z-index: 2;}
+.ap__campaignWrp{align-content: flex-start;border-radius: 15px;position: relative;overflow: hidden;transition: all 0.4s ease;}
+.ap__campaignWrp.ap__camp__1{background: url(../images/campaign-1.jpg) no-repeat center center/cover;}
+.ap__campaignWrp.ap__camp__2{background: url(../images/campaign-2.jpg) no-repeat center center/cover;}
+.ap__campaignWrp.ap__camp__3{background: url(../images/campaign-3.jpg) no-repeat center center/cover;}
+.ap__campaignWrp.ap__camp__4{background: url(../images/campaign-4.jpg) no-repeat center center/cover;}
+.ap__campaignWrp::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;z-index: 1; transition: background 0.3s, border-radius 0.3s, opacity 0.3s;visibility: hidden;opacity: 0;}
+.ap__campaignWrp:hover::after{visibility: visible;opacity: 1;}
+.ap__campaignData .ap__campaignHead{font-size: 24px;}
+.ap__campaignData .ap__common__para{margin: 10px 0;}
+.ap__innerSpace{height: 260px;margin-bottom: 30px;}
+.ap__campaignData a{color: #FF6F00 !important;font-size: 14px;font-weight: 400;letter-spacing: 1px;}
+.ap__section__7{padding:8rem 0;background-attachment:fixed;background-image:url(../images/volunteer-sect-bg.jpg);background-position:center top;background-repeat:no-repeat;background-size:cover;position:relative;}
+
+.ap__section__7::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.7);width: 100%;height: 100%;z-index: 1; transition: background 0.3s, border-radius 0.3s, opacity 0.3s;}
+.ap__whtPara{color: #fff;}
+.ap__section__8{margin-top: 1.5rem;}
+.ap__volunteerWrp{position: relative;z-index: 2;}
+.ap__volunteerWrp .ap__common__para{margin: 1.25rem 0 3.125rem;}
+.ap__newsLetterWrp{background-color: #FF6F00;padding: 2.5rem;border-radius: 10px;}
+.ap__newsLetterHead{width: 40%;float: left;}
+.ap__mailTitle{display: inline-block;margin-left: 15px;}
+.ap__mailTitle span{color: #fff;}
+.ap__formSubscribe{width: 50%;float: right;display: flex; justify-content: space-between;align-items: flex-end;}
+.ap__inputDiv{width: calc(65% - 10px);float: left;}
+.ap__inputDiv .ap__textInput{border: none; background-color: transparent;border-bottom: 1px solid #fafafa;padding-bottom: .75rem;font-family: 'Lato', sans-serif;font-size: 1.125rem;color: #fff;}
+.ap__inputDiv .ap__textInput::placeholder{color: #fff;}
+.ap__buttonDiv{width: calc(35% - 10px);float: right;}
+.ap__buttonDiv button{background-color: #fff;border: none;width: 100%;float: left;padding: 16px 10px;color: #FF6F00;font-size: .875rem;letter-spacing: 1px;font-weight: 400;font-family: 'Lato', sans-serif;cursor: pointer;border-radius: 5px;}
+.ap__buttonDiv button i{margin-right: 8px;}
+
+footer{padding:5rem 0 2.5rem 0;background-color: #002D12;}
+.ap__footLogo{width: calc(35% - 40px);float: left;text-align: left;}
+.ap__footLogo .logoDiv{margin-bottom: .9375rem;}
+.ap__footMenuWrp{width: calc(65% - 40px);float: right;display: flex;justify-content: space-between;align-items: flex-start;flex-flow: row wrap;}
+.ap__footMenu{width: calc(33.33% - 10px);display: inline-block;}
+.ap__footMenu .ap__footHead{color:#FF9C34;font-family:"Heebo",Sans-serif;font-size:1.125rem;font-weight:600;margin-bottom: 15px;}
+.ap__footMenu .ap__footNav li{margin-bottom: .375rem;}
+.ap__footMenu .ap__footNav li a{color: #fff;font-size: .875rem;}
+.ap__footNav li .ap__footIco{width: 20px;display: inline-block;margin-right: .625rem;height: 20px;}
+/* .ap__footNav li .ap__footIco img{max-width: 100%;} */
+.ap__footNav li .ap__addText{display: inline-block;vertical-align: middle;line-height: 1.3;font-size: .875rem;}
+.ap__footNav li.flexDisplay{margin-bottom: 15px;}
+.ap__footInner{padding-bottom: 1.875rem; border-bottom: 1px solid #6A6A6A5C;}
+.ap__footCopy{margin-top: 1.25rem;}
+.mfp-bg{background:#000;opacity:0.6;}
+/**
+ * Simple fade transition,
+ */
+ .mfp-fade.mfp-bg{opacity:0;-webkit-transition:all 0.15s ease-out;-moz-transition:all 0.15s ease-out;transition:all 0.15s ease-out;}
+.mfp-fade.mfp-bg.mfp-ready{opacity:0.8;}
+.mfp-fade.mfp-bg.mfp-removing{opacity:0;}
+.mfp-fade.mfp-wrap .mfp-content{opacity:0;-webkit-transition:all 0.15s ease-out;-moz-transition:all 0.15s ease-out;transition:all 0.15s ease-out;}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content{opacity:1;}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content{opacity:0;}
+
+
+@media screen and (max-width:1400px) {
+ .ap__logoDiv{width:148px;}
+ .ap__bigFnt{font-size:3.2rem;}
+ .ap__common__heading{font-size:40px;}
+ .ap__cardItem .ap__cardTitle{font-size:1.4rem;}
+ .ap__common__para{font-size: 15px;}
+}
+@media screen and (max-width:1100px) {
+ .ap__storyWrp .ap__storyCnt{width:calc(45% - 0px);}
+ .ap__countIncrement li{width:calc(33.33% - 12px);}
+ .ap__section__4 {height: 498px;padding: 4rem 0;}
+ .ap__actionWrp .ap__actionImages{margin-top: -7.5rem;}
+}
+@media screen and (max-width:800px) {
+  .ap__cardsList li{width: 100%;margin-bottom: 2.1875rem;}
+  .ap__storyWrp .ap__storyImg{width: 100%;margin-bottom: 3.75rem;}
+  .ap__storyAbs{width: 470px;left: 50%;transform: translateX(-50%);top: -85px;}
+  .ap__storyWrp .ap__storyCnt{width: 100%;margin-top: 2.5rem;}
+  .ap__actionDiv{width: 60% !important;}
+  .ap__section__4{height: auto;}
+  .ap__actionWrp{flex-flow: row wrap;}
+  .ap__actionWrp .ap__actionText{width: 100%;}
+  .ap__actionWrp .ap__actionImages{width: 100%;margin-top: 3.125rem;}
+  .ap__campaignListing li{width:calc(50% - 15px);margin-bottom: 2.1875rem;}
+  .ap__newsLetterHead{width: 100%;margin-bottom: 20px;}
+  .ap__formSubscribe{width: 100%;}
+  .ap__footLogo{width: 100%;text-align: center;margin-bottom: 2.1875rem;}
+  .ap__footMenuWrp{width: 100%;}
+  header{display: none !important;}
+  .headerMob{display: block;}
+  .ap__banner__image img.ap__mob__banner{display: block;}
+  .ap__banner__image img.ap__desk__banner{display: none;}
+
+}
+@media screen and (max-width:550px) {
+ .ap__common__heading{font-size:30px;}
+ .ap__storyAbs{width:200px;left:50%;transform:translateX(-50%);top:-20px;}
+ section{margin:2rem 0;}
+ .ap__storyWrp .ap__storyCnt{margin-top: 0;}
+ .ap__actionDiv{width:100% !important;flex-flow: row wrap;}
+ .ap__videoPlay{width: 60%;margin-top: 30px;}
+ .ap__videoPlay .ap__playIco{width:45px;height:45px;}
+ .ap__actionDiv span{width: 65%;}
+ .ap__countIncrement li{width:100%;margin-bottom:30px;text-align: center;}
+ .ap__section__4{margin-bottom: 0;}
+ .ap__headDiv{flex-flow: row wrap;}
+ .ap__headDiv .ap__campHead{width:100%;margin-bottom:20px;}
+ .ap__common__para br{display: none;}
+ .ap__campaignListing li{width: 100%;}
+ .ap__formSubscribe{flex-flow: row wrap;}
+ .ap__inputDiv{width:100%;margin-bottom: 20px;}
+ .ap__buttonDiv{width:100%;}
+ .ap__footMenu{width:calc(50% - 10px);}
+ .ap__footMenu:last-child{width: 100%;margin-top: 40px;}
+ .ap__footCopy{flex-flow: row wrap;}
+ .ap__footCopy p{width: 100%;text-align: center;margin: 10px 0;}
+ footer{padding:3rem 0 2.5rem 0;}
+ .ap__newsLetterWrp{padding:1.5rem;}
+ .ap__section__7{padding:4rem 0;}
+ .ap__common__heading br{display: none;}
+ .ap__bannerContent{padding: 0 20px;}
+}
