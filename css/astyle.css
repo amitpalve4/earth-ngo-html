@@ -7,7 +7,7 @@ font-family: 'Roboto Slab', serif; */
 
 body{font-family: 'Lato', sans-serif;line-height: 1.5;position: relative;font-weight: 400;}
 header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;background-color: #99999994;padding: .3125rem 0;}
-/* header.sticky{background-color: #999;} */
+header.sticky{background-color: #999;}
 .ap__logoDiv{width: 180px;}
 .ap__logoDiv img{max-width: 100%;}
 .ap__navigation .ap__navLinks{margin: 0 1.125rem;}
@@ -76,3 +76,41 @@ section{margin: 4rem 0;}
 .ap__teamListing li .ap__teamCard .ap__teamName{font-weight: 700;}
 .ap__storyAbs{width: 400px;left: 40px;top: -70px;}
 .ap__storyAbs img{max-width: 100%;}
+.ap__section__4{background: url(../images/green-leaves-pattern-background-.jpg) no-repeat center center/cover;height: 600px;padding: 6rem 0;margin-top: 3.75rem;margin-bottom: 6.25rem;}
+.ap__section__4::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.7);width: 100%;height: 100%;z-index: 1;}
+.ap__actionWrp{position: relative;z-index: 2;}
+.ap__actionWrp .ap__actionText{width: calc(55% - 40px);float: left;text-align: left;}
+.ap__actionWrp .ap__actionImages{width: calc(45% - 40px);float: right;margin-top: -9.375rem;}
+.ap__actionWrp .ap__actionImages .ap__actionSlider{border-radius: 15px;overflow: hidden;}
+.ap__actionWrp .ap__actionImages .ap__actionSlider img{max-width: 100%;}
+.ap__actionWrp .ap__actionImages .ap__actionSlider .ap__actionItem{border-radius: 15px;}
+.ap__actionWrp .ap__actionText .ap__common__heading{margin-bottom: 20px;}
+.ap__actionWrp .ap__actionText .ap__common__para{color: #fff;}
+.ap__countIncrement{margin-top: 40px;}
+.ap__countIncrement li{width: calc(33.33% - 50px);display: inline-block;text-align: left;}
+.ap__countIncrement li .ap__countValue{color: #fff;font-size: 2.375rem;}
+.ap__countIncrement .ap__countValue sup{color: #FF6F00;font-weight: 400;}
+.ap__countIncrement .ap__countName{color: #fff;font-size: 18px;font-weight: 400;}
+.ap__goalsListing{margin-top: 40px;}
+.ap__goalsListing li{margin: 0 15px;position: relative;}
+.ap__goalsListing li::before{content:'';position:absolute;top:0;left:0;border-radius:10px;background-color:#1B4624E6;height:100%;width:100%;transition:all .4s ease;z-index:1;-webkit-backface-visibility:hidden;backface-visibility:hidden;opacity:0;visibility:hidden;}
+.ap__goalsListing li .ap__goalWrp{border-radius: 10px;overflow: hidden;}
+.ap__goalsListing li .ap__goalWrp img{max-width: 100%;}
+.ap__goalsListing li:hover::before{transform: scale(0.9);visibility: visible;opacity: 1;}
+@keyframes fadeInUp{from{transform:translate3d(0,40px,0)}
+to{transform:translate3d(0,0,0);opacity:1}
+}
+@-webkit-keyframes fadeInUp{from{transform:translate3d(0,40px,0)}
+to{transform:translate3d(0,0,0);opacity:1}
+}
+.animated{animation-duration:0.5s;animation-fill-mode:both;-webkit-animation-duration:1s;-webkit-animation-fill-mode:both}
+.animatedFadeInUp{opacity:0}
+.fadeInUp{opacity:0;animation-name:fadeInUp;-webkit-animation-name:fadeInUp;}
+
+.ap__goalContents{text-align: center;top: 35%; left: 0%;;z-index: 2;width: 100%;padding: 0 30px;display: none;}
+.ap__goalContents .ap__goalTitle{color: #FF6F00;margin-bottom: 10px;}
+.ap__goalContents .ap__common__para{color: #fff;}
+.ap__goalsListing li:hover .ap__goalContents{display: block;}
+.ap__viewMore{margin-top: 3.75rem;}
+.ap__viewMore .ap__viewmoreClick{padding: 16px 30px;}
+.ap__headDiv .ap__campHead{width: 60%;}

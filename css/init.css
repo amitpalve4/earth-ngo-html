@@ -52,4 +52,5 @@ ul,ul li{list-style-type:none}
 .ap__common__heading.orange-color{color: #FF6F00;}
 .ap__common__para{font-family: 'Lato', sans-serif;font-size: 16px;color: #646464;}
 .wrapper{max-width: 1180px;display: inline-block;width: 100%;padding: 0 20px;}
-.ap__common_button{border-radius:5px 5px 5px 5px;color: #fff;background-color: #FF6F00;}
+.ap__common_button{border-radius:10px 10px 10px 10px;color: #fff;background-color: #FF6F00;transition: all 0.4s ease;padding: 16px 30px;}
+.ap__common_button:hover{background-color: #E86500;}

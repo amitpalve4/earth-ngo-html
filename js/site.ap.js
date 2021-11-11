@@ -40,6 +40,32 @@ $(document).ready(function(){
     });
   }
 
+  if($('.ap__actionSlider').length > 0){
+    $('.ap__actionSlider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 1500,
+
+    });
+  }
+
+  if($('.ap__goalsListing').length > 0){
+    $('.ap__goalsListing').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 1500,
+
+    });
+  }
+
 });
 
 
