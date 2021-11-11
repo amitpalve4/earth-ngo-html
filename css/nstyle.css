@@ -32,3 +32,37 @@
   padding:0rem 2.5rem 0rem 0rem;
 
 }
+.np-contentSec--innerLft ul li{
+  padding-bottom:calc(10px / 2);
+}
+.np-contentSec--innerLft ul li{
+  margin-top:calc(10px / 2);
+	padding-bottom:calc(10px / 2);
+
+}
+.np-contentSec--innerLft ul li:not(:first-child){
+  margin-top:calc(10px / 2);
+
+}
+.mar--b{
+  margin-bottom: 1.25rem !important;
+}
+.ap__common__heading.np-small__heading{
+  font-size:1.625rem;
+}
+.np-disc{
+  margin:0px 0px 10px 0px;
+	padding:0px 20px 0px 0px;
+
+}
+.org{
+  width:1.25em;
+  color: #FF6F00;
+  font-size: 1rem;
+  font-weight:900;
+}
+.gry{
+  color: #6F747E;
+  padding-left:.3125rem;
+
+}
