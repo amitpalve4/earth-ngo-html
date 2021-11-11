@@ -1,0 +1,34 @@
+.np-bannerSec__bg{
+  background:url("../images/np-img/green-leavesBg.jpg") center center/cover no-repeat;
+
+}
+.np-bannerSec__bg.np-bannerSec__bg--height{
+  transition: background 0.3s,border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top:-4.3125rem;
+  margin-bottom:0rem;
+  padding:200px 0px 120px 0px;
+}
+.np-bannerSec__bg--overlay{
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  position: absolute;
+  background:#000;
+  opacity: 0.6;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.ap__common__heading.np-sec__title{
+  color:#fff;
+}
+
+.np-contentSec{
+  transition:background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+	padding:7.5rem 0rem 3.75rem 0rem;
+
+}
+.np-contentSec--lftWrp{
+  padding:0rem 2.5rem 0rem 0rem;
+
+}
