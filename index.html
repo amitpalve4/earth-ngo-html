@@ -14,19 +14,29 @@
 </head>
 <body>
     <header class="col-100 floatLft flexDisplay justifyCenter deskHeader">
-        <div class="wrapper">
+        <div class="header__wrapper">
             <div class="headWrp col-100 floatLft flexDisplay alignCenter justifySpace">
                 <div class="ap__logoDiv floatLft"><a href="index.html"><img src="./images/logo-1.png" alt="Logo" /></a></div>
                 <nav class="floatRgt">
                     <ul class="ap__navigation">
-                        <li class="ap__navLinks inlineBlk active">
+                        <li class="ap__navLinks inlineBlk">
                             <a href="javascript:;" class="ap__navClick">Home</a>
                         </li>
                         <li class="ap__navLinks inlineBlk">
                             <a href="javascript:;" class="ap__navClick">About us</a>
                         </li>
+                        <li class="ap__navLinks ap__dropParent inlineBlk relative active">
+                            <a href="javascript:;" class="ap__navClick">Events <i class="fa fa-angle-down"></i></a>
+                            <div class="ap__dropMenu absolute">
+                                <div class="ap__emptyHeight col-100 floatLft"></div>
+                                <div class="ap__dropInner col-100 floatLft">
+                                    <a href="javascript:;" class="ap__dropInnerLink">Event Details</a>
+                                    <a href="javascript:;" class="ap__dropInnerLink">Event Gallery</a>
+                                </div>
+                            </div>
+                        </li>
                         <li class="ap__navLinks ap__dropParent inlineBlk relative">
-                            <a href="javascript:;" class="ap__navClick">Compaign <i class="fa fa-angle-down"></i></a>
+                            <a href="javascript:;" class="ap__navClick">Campaign <i class="fa fa-angle-down"></i></a>
                             <div class="ap__dropMenu absolute">
                                 <div class="ap__emptyHeight col-100 floatLft"></div>
                                 <div class="ap__dropInner col-100 floatLft">
@@ -35,23 +45,20 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="ap__navLinks ap__dropParent inlineBlk relative">
-                            <a href="javascript:;" class="ap__navClick">Pages <i class="fa fa-angle-down"></i></a>
-                            <div class="ap__dropMenu absolute">
-                                <div class="ap__emptyHeight col-100 floatLft"></div>
-                                <div class="ap__dropInner col-100 floatLft">
-                                    <a href="javascript:;" class="ap__dropInnerLink">FAQ</a>
-                                    <a href="javascript:;" class="ap__dropInnerLink">Privacy Policy</a>
-                                    <a href="javascript:;" class="ap__dropInnerLink">Terms & Conditions</a>
-                                    <a href="javascript:;" class="ap__dropInnerLink">News</a>
-                                </div>
-                            </div>
+                        <li class="ap__navLinks inlineBlk">
+                            <a href="javascript:;" class="ap__navClick">Gallery</a>
+                        </li>
+                        <li class="ap__navLinks inlineBlk">
+                            <a href="javascript:;" class="ap__navClick">Volunteer</a>
+                        </li>
+                        <li class="ap__navLinks inlineBlk">
+                            <a href="javascript:;" class="ap__navClick">Corporate partnership</a>
                         </li>
                         <li class="ap__navLinks inlineBlk">
                             <a href="javascript:;" class="ap__navClick">Contact us</a>
                         </li>
                         <li class="ap__navLinks inlineBlk">
-                            <a href="javascript:;" class="ap__navClick ap__navButton">Donate</a>
+                            <a href="javascript:;" class="ap__navClick ap__navButton">Donation</a>
                         </li>
                     </ul>
                 </nav>
@@ -80,30 +87,39 @@
                             <a href="javascript:;" class="ap__navClick">About us</a>
                         </li>
                         <li class="ap__navLinks ap__dropParent inlineBlk relative mainDrop">
-                            <a href="javascript:;" class="ap__navClick">Compaign <i class="fa fa-angle-down"></i></a>
+                            <a href="javascript:;" class="ap__navClick">Events <i class="fa fa-angle-down"></i></a>
                             <div class="ap__dropMenu ap__mobile relative">
+                                <div class="ap__emptyHeight col-100 floatLft"></div>
+                                <div class="ap__dropInner col-100 floatLft">
+                                    <a href="javascript:;" class="ap__dropInnerLink">Event Details</a>
+                                    <a href="javascript:;" class="ap__dropInnerLink">Event Gallery</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ap__navLinks ap__dropParent inlineBlk relative mainDrop">
+                            <a href="javascript:;" class="ap__navClick">Campaign <i class="fa fa-angle-down"></i></a>
+                            <div class="ap__dropMenu ap__mobile relative">
+                                <div class="ap__emptyHeight col-100 floatLft"></div>
                                 <div class="ap__dropInner col-100 floatLft">
                                     <a href="javascript:;" class="ap__dropInnerLink">Campaign Details</a>
                                     <a href="javascript:;" class="ap__dropInnerLink">Campaign Gallery</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="ap__navLinks ap__dropParent inlineBlk relative mainDrop">
-                            <a href="javascript:;" class="ap__navClick">Pages <i class="fa fa-angle-down"></i></a>
-                            <div class="ap__dropMenu ap__mobile relative">
-                                <div class="ap__dropInner col-100 floatLft">
-                                    <a href="javascript:;" class="ap__dropInnerLink">FAQ</a>
-                                    <a href="javascript:;" class="ap__dropInnerLink">Privacy Policy</a>
-                                    <a href="javascript:;" class="ap__dropInnerLink">Terms & Conditions</a>
-                                    <a href="javascript:;" class="ap__dropInnerLink">News</a>
-                                </div>
-                            </div>
+                        <li class="ap__navLinks inlineBlk mainDrop">
+                            <a href="javascript:;" class="ap__navClick">Gallery</a>
+                        </li>
+                        <li class="ap__navLinks inlineBlk mainDrop">
+                            <a href="javascript:;" class="ap__navClick">Volunteer</a>
+                        </li>
+                        <li class="ap__navLinks inlineBlk mainDrop">
+                            <a href="javascript:;" class="ap__navClick">Corporate partnership</a>
                         </li>
                         <li class="ap__navLinks inlineBlk mainDrop">
                             <a href="javascript:;" class="ap__navClick">Contact us</a>
                         </li>
-                        <li class="ap__navLinks inlineBlk">
-                            <a href="javascript:;" class="ap__navClick ap__navButton">Donate</a>
+                        <li class="ap__navLinks inlineBlk mainDrop">
+                            <a href="javascript:;" class="ap__navClick ap__navButton">Donation</a>
                         </li>
                     </ul>
                 </div>
@@ -356,7 +372,7 @@
                         <div class="ap__campaignData floatLft">
                             <h2 class="ap__campaignHead ap__common__heading">Green Planet</h2>
                             <p class="ap__common__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
-                            <a href="javascript:;" class="ap__takeAction">TAKE ACTION <span><img src="./images/right-arrow-action.png" alt=""></span></a>
+                            <a href="campaign-details.html" class="ap__takeAction">TAKE ACTION <span><img src="./images/right-arrow-action.png" alt=""></span></a>
                         </div>
                     </div>
                 </li>
@@ -366,7 +382,7 @@
                         <div class="ap__campaignData floatLft">
                             <h2 class="ap__campaignHead ap__common__heading">Green Energy</h2>
                             <p class="ap__common__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
-                            <a href="javascript:;" class="ap__takeAction">TAKE ACTION <span><img src="./images/right-arrow-action.png" alt=""></span></a>
+                            <a href="campaign-details.html" class="ap__takeAction">TAKE ACTION <span><img src="./images/right-arrow-action.png" alt=""></span></a>
                         </div>
                     </div>
                 </li>
@@ -376,7 +392,7 @@
                         <div class="ap__campaignData floatLft">
                             <h2 class="ap__campaignHead ap__common__heading">Clean Beach</h2>
                             <p class="ap__common__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
-                            <a href="javascript:;" class="ap__takeAction">TAKE ACTION <span><img src="./images/right-arrow-action.png" alt=""></span></a>
+                            <a href="campaign-details.html" class="ap__takeAction">TAKE ACTION <span><img src="./images/right-arrow-action.png" alt=""></span></a>
                         </div>
                     </div>
                 </li>
@@ -386,7 +402,7 @@
                         <div class="ap__campaignData floatLft">
                             <h2 class="ap__campaignHead ap__common__heading">Free River</h2>
                             <p class="ap__common__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
-                            <a href="javascript:;" class="ap__takeAction">TAKE ACTION <span><img src="./images/right-arrow-action.png" alt=""></span></a>
+                            <a href="campaign-details.html" class="ap__takeAction">TAKE ACTION <span><img src="./images/right-arrow-action.png" alt=""></span></a>
                         </div>
                     </div>
                 </li>

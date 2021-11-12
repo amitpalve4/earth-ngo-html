@@ -49,9 +49,9 @@ ul,ul li{list-style-type:none}
 .ap__fw800{font-weight: 800;}
 .ap__fw900{font-weight: 900;}
 .ap__common__heading{color: #002D12;font-size: 48px;font-family: 'Heebo', sans-serif;font-weight: 700;line-height: 1;}
-.ap__common__heading.orange-color{color: #FF6F00;}
+.ap__common__heading.orange-color{color: #79b62b;}
 .ap__common__para{font-family: 'Lato', sans-serif;font-size: 16px;color: #646464;}
 .wrapper{max-width: 1180px;display: inline-block;width: 100%;padding: 0 20px;}
-.ap__common_button{border-radius:10px 10px 10px 10px;color: #fff;background-color: #FF6F00;transition: all 0.4s ease;padding: 16px 30px;}
-.ap__common_button:hover{background-color: #E86500;}
+.ap__common_button{border-radius:10px 10px 10px 10px;color: #fff;background-color: #79b62b;transition: all 0.4s ease;padding: 16px 30px;}
+.ap__common_button:hover{background-color: #298d1c;}
 

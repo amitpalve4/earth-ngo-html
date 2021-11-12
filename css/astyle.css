@@ -6,56 +6,56 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
 body{font-family: 'Lato', sans-serif;line-height: 1.5;position: relative;font-weight: 400;}
-header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;background-color: #99999994;padding: .3125rem 0;}
-header.sticky{background-color: #999;}
+header{position: fixed;left: 0;top: 0;z-index: 999;transition: all 0.3s ease;background-color: #fff;padding: .3125rem 0;box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 10%);}
+.header__wrapper{max-width: 1500px;display: inline-block;width: 100%;padding: 0 20px;}
+/* header.sticky{background-color: #999;} */
 .ap__logoDiv{width: 180px;}
 .ap__logoDiv img{max-width: 100%;}
-.ap__navigation .ap__navLinks{margin: 0 1.125rem;}
-.ap__navigation .ap__navLinks a{color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;}
+.ap__navigation .ap__navLinks{margin: 0 0.8rem;}
+.ap__navigation .ap__navLinks a{color: #020202;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;}
 .ap__navigation .ap__navLinks a i{font-size: 1.25rem;display: inline-block;vertical-align: middle;margin-bottom: .125rem;margin-left: .3125rem;}
-.ap__navigation .ap__navLinks a.ap__navButton{border-radius:.3125rem .3125rem .3125rem .3125rem;padding:.8125rem 2rem .8125rem 2rem;color: #fff;background-color: #FF6F00;transition: all 0.3s ease;}
-.ap__emptyHeight{height: 20px;}
+.ap__navigation .ap__navLinks a.ap__navButton{border-radius:.3125rem .3125rem .3125rem .3125rem;padding:.8125rem 2rem .8125rem 2rem;color: #fff;background-color: #79b62b;transition: all 0.3s ease;}
+.ap__emptyHeight{height: 25px;}
 .ap__dropMenu{position: absolute;left: -40px;top: 100%;display: block;min-width:220px;transition: all 0.4s ease;visibility: hidden; opacity: 0;}
-.ap__dropInner{padding:.625rem .9375rem .625rem .9375rem;background-color:#79797985;border-radius:0px 0px 10px 10px;min-width:220px;box-shadow:0px 0px 0px 0px rgb(0 0 0 / 50%);}
+.ap__dropInner{padding:.625rem .9375rem .625rem .9375rem;background-color:#fff;border-radius:0px 0px 10px 10px;min-width:220px;box-shadow:0px 0px 0px 0px rgb(0 0 0 / 50%);box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 10%);}
 .ap__dropInner a{color: #fff;font-size: .875rem;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;margin: 10px 0;display: block;}
-.ap__dropInner a:hover{color: #FF6F00;}
+.ap__dropInner a:hover{color: #79b62b;}
 .ap__navigation .ap__navLinks.ap__dropParent:hover .ap__dropMenu{visibility: visible;opacity: 1;}
+.ap__dropMenu.ap__mobile .ap__dropInner a{color: #020202;}
+.ap__navigation .ap__navLinks:not(:last-child) a.ap__navClick:hover{color: #79b62b;}
+.ap__navigation .ap__navLinks.active a.ap__navClick{color: #79b62b;}
 
-.ap__navigation .ap__navLinks:not(:last-child) a.ap__navClick:hover{color: #FF6F00;}
-.ap__navigation .ap__navLinks.active a.ap__navClick{color: #FF6F00;}
-
-.headerMob{display: none;position: fixed;-webkit-transition: all 0.4s ease;height: 70px;z-index: 999;width: 100%;background-color: #99999994;}
+.headerMob{display: none;position: fixed;-webkit-transition: all 0.4s ease;height: 70px;z-index: 999;width: 100%;background-color: #fff;padding: .3125rem 0;box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 10%);}
 .headerMob .logoDiv{position: absolute;left: 5px;top: 50%; transform: translateY(-50%); width: 150px;}
 .headerMob .logoDiv img{max-width: 100%;}
-.headerMob.sticky{background-color: #999;; transition: all 0.4s ease; z-index: 40; top: 0; left: 0;width: 100%;padding: 5px 15px;-webkit-box-shadow: 0px -1px 5px -2px rgba(0,0,0,0.75);-moz-box-shadow: 0px -1px 5px -2px rgba(0,0,0,0.75);box-shadow: 0px -1px 5px -2px rgba(0,0,0,0.75); }
 
 .menu-wrap {background-color: #002D12;position: fixed;	top: 0;	height: 100%;	width: 280px;	margin-right: -280px;	font-size: 1em;	font-weight: 700;	overflow: auto;	transition: .25s;	z-index: 10;right: 0;text-align: left;}
 .menu-show {margin-right: 0;	box-shadow: 4px 2px 15px 1px #B9ADAD;}
 .menu-sidebar {	margin: 20px 20px 80px 25px;position: relative;top: 40px;}
 .menu-sidebar li {padding: 10px 0px;position: relative;width: 100%;float: left;margin: 0 !important;}
-.menu-sidebar li > a {color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;width: 80%;display: block;}
+.menu-sidebar li > a {color: #fff;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;transition: all 0.3s ease;width: 100%;display: block;}
 .menu-sidebar .menu-item-has-children {	position: relative;}
 .menu-sidebar .menu-item-has-children .sub-menu {	display: none;}
-.menu-sidebar li > a i{position: absolute;right: 50px;top: 10px;font-size: 22px;}
+.menu-sidebar li > a i{position: absolute;right: 0px;top: 10px;font-size: 22px;}
 .sidebar-menu-arrow::after {content: "\f107";font-family: 'FontAwesome';padding: 10px;color: #FFFA3B;position: relative;}
 .sidebar-menu-arrow:hover::after {cursor: pointer;	color: #fff;}
 .sidebar-menu-arrow:active::after {	top: 2px;}
 
-.menu-sidebar li > a:hover{color: #FF6F00;}
-.menu-sidebar li > a.active{color: #FF6F00;}
+.menu-sidebar li > a:hover{color: #79b62b;}
+.menu-sidebar li > a.active{color: #79b62b;}
 .ap__dropMenu.ap__mobile{position: static;visibility: visible;opacity: 1;display: none;margin-top: 10px;}
 
 /*Hamburger Button*/
 .toggle-button {position: fixed;width: 38px;height: 40px;top: 24px;right: 15px;	padding: 4px;transition: .25s;z-index: 15;}
 .toggle-button:hover {cursor: pointer;}
 .toggle-button .menu-bar {position: absolute;border-radius: 2px;width: 80%;	transition: .5s;}
-.toggle-button .menu-bar-top {border: 3px solid #fff;border-bottom: none;top: 0;}
-.toggle-button .menu-bar-middle {height: 3px;background-color: #fff;margin-top: 7px;margin-bottom: 7px;top: 2px;}
-.toggle-button .menu-bar-bottom {border: 3px solid #fff;	border-top: none;top: 18px;}
+.toggle-button .menu-bar-top {border: 3px solid #79b62b;border-bottom: none;top: 0;}
+.toggle-button .menu-bar-middle {height: 3px;background-color: #79b62b;margin-top: 7px;margin-bottom: 7px;top: 2px;}
+.toggle-button .menu-bar-bottom {border: 3px solid #79b62b;	border-top: none;top: 18px;}
 .button-open {right: 25px;}
-.button-open .menu-bar-top {border-color: #fff;	transform: rotate(45deg) translate(8px, 8px);transition: .5s;}
-.button-open .menu-bar-middle {	background-color: #fff;	transform: translate(-230px);	transition: .1s ease-in;	opacity: 0;}
-.button-open .menu-bar-bottom {	border-color: #fff;	transform: rotate(-45deg) translate(7px, -7px);	transition: .5s;top: 22px;}
+.button-open .menu-bar-top {border-color: #79b62b;	transform: rotate(45deg) translate(8px, 8px);transition: .5s;}
+.button-open .menu-bar-middle {	background-color: #79b62b;	transform: translate(-230px);	transition: .1s ease-in;	opacity: 0;}
+.button-open .menu-bar-bottom {	border-color: #79b62b;	transform: rotate(-45deg) translate(7px, -7px);	transition: .5s;top: 22px;}
 
 /* .ap__banner__1{background: url(../images/young-volunteers-planting-trees-in-green-park-together.jpg) no-repeat center center/cover;}
 .ap__banner__2{background: url(../images/young-volunteers-with-recycling-box-cleaning-lawn-together.jpg) no-repeat center center/cover;}
@@ -66,7 +66,7 @@ header.sticky{background-color: #999;}
 .ap__banner__image::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.6);width: 100%;height: 100%;z-index: 1;}
 .ap__bannerContent{max-width: 640px;width: 100%;display: block;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 5;}
 .ap__bigFnt{font-size: 3.875rem;line-height: 1;color: #fff;}
-.ap__bannerTitle span{color: #FF6F00;}
+.ap__bannerTitle span{color: #79b62b;}
 .ap__bannerPara{color: #fff;margin: .9375rem 0 3.75rem;}
 .ap__contentWrp .ap__common_button{padding: 1rem 1.875rem;letter-spacing: 1px;border-radius: 10px;}
 section.commonMar{margin: 4rem 0;}
@@ -74,12 +74,12 @@ section.commonMar{margin: 4rem 0;}
 .ap__movementSect .ap__common__para{margin-top: .9375rem;margin-bottom: 3.125rem;}
 .ap__cardsList li{width: calc(33.33% - 20px);display: inline-block;}
 .ap__cardItem{text-align:center;padding:1.875rem 1.875rem 0rem 1.875rem;border-style:solid;border-width:1px 1px 1px 1px;border-color:#EAEAEA;border-radius:10px 10px 10px 10px; transition: all 0.4s ease;}
-.ap__cardItem .ap__cardLink{margin: .9375rem 0 1.25rem;display: inline-block;color: #FF6F00;transition: all 0.4s ease;}
+.ap__cardItem .ap__cardLink{margin: .9375rem 0 1.25rem;display: inline-block;color: #79b62b;transition: all 0.4s ease;}
 .ap__cardItem .ap__ico{width: 50px;height: 50px;text-align: center;display: inline-block;transition: all 0.4s ease;}
 .ap__cardItem .ap__cardTitle{color: #002D12;margin: .9375rem 0 1.5rem;font-size: 1.75rem;line-height: 1.1;transition: all 0.4s ease;}
 .ap__cardItem .ap__ico img{max-width: 100%;display: inline-block;}
 .ap__cardItem .ap__cardDesc{transition: all 0.4s ease;margin-bottom: 0;}
-/* .ap__cardsList li:hover .ap__cardItem{background-color: #FF6F00;}
+/* .ap__cardsList li:hover .ap__cardItem{background-color: #79b62b;}
 .ap__cardsList li:hover .ap__cardItem .ap__cardTitle{color: #fff;}
 .ap__cardsList li:hover .ap__cardItem .ap__cardDesc{color: #fff;}
 .ap__cardsList li:hover .ap__cardItem .ap__cardLink{visibility: visible;opacity: 1;}
@@ -91,20 +91,20 @@ section.commonMar{margin: 4rem 0;}
 .ap__storyWrp .ap__storyCnt .ap__common__para{margin: 1.25rem 0;}
 .ap__storyBullets{padding-left: 22px;}
 .ap__storyBullets li{width: calc(50% - 10px);display: inline-block;text-align: left;margin: 0 0 .6rem !important;position: relative;}
-.ap__storyBullets li::before{content:'';display:inline-block;vertical-align:middle;margin-right:12px;margin-left:-1.2em;width:12px;height:3px;background-color:#FF6F00; }
+.ap__storyBullets li::before{content:'';display:inline-block;vertical-align:middle;margin-right:12px;margin-left:-1.2em;width:12px;height:3px;background-color:#79b62b; }
 .ap__actionDiv{margin-top: 20px;}
 .ap__actionDiv .ap__common_button{padding: 14px 30px;}
 .ap__actionDiv span{font-weight: 700;font-size: 18px;}
 .ap__videoPlay{width: 45%;}
-.ap__videoPlay .ap__playIco{display: flex;width: 60px;height: 60px;border-radius: 50px;background-color:rgb(255, 111, 0);animation: ripple 2s linear infinite;justify-content: center;align-items: center;transition: all 0.7s ease;}
+.ap__videoPlay .ap__playIco{display: flex;width: 60px;height: 60px;border-radius: 50px;background-color:#79b62bc2;animation: ripple 2s linear infinite;justify-content: center;align-items: center;transition: all 0.7s ease;}
 .ap__videoPlay .ap__playIco img{max-width: 100%;display: inline-block;margin-left: 5px;}
 
 @keyframes ripple {
     0% {
-      box-shadow: 0 0 0 0 rgba(255, 111, 0, 0.5), 0 0 0 1px rgba(255, 111, 0, 0.5), 0 0 0 3px rgba(255, 111, 0, 0.5), 0 0 0 5px rgba(255, 111, 0, 0.5);
+      box-shadow: 0 0 0 0 rgba(121,182,43, 0.5), 0 0 0 1px rgba(121,182,43, 0.5), 0 0 0 3px rgba(121,182,43, 0.5), 0 0 0 5px rgba(121,182,43, 0.5);
     }
     100% {
-      box-shadow: 0 0 0 0 rgba(255, 111, 0, 0.5), 0 0 0 4px rgba(255, 111, 0, 0.5), 0 0 0 20px rgba(255, 255, 255, 0), 0 0 0 10px rgba(255, 255, 255, 0);
+      box-shadow: 0 0 0 0 rgba(121,182,43, 0.5), 0 0 0 4px rgba(121,182,43, 0.5), 0 0 0 20px rgba(255, 255, 255, 0), 0 0 0 10px rgba(255, 255, 255, 0);
     }
 }
 
@@ -128,11 +128,11 @@ section.commonMar{margin: 4rem 0;}
 .ap__countIncrement{margin-top: 40px;}
 .ap__countIncrement li{width: calc(33.33% - 50px);display: inline-block;text-align: left;}
 .ap__countIncrement li .ap__countValue{color: #fff;font-size: 2.375rem;position: relative;}
-.ap__countIncrement .countNum h3{color: #FF6F00;font-weight: 400;position: absolute;top: -10px;right: 55px;font-size: 26px;}
+.ap__countIncrement .countNum h3{color: #79b62b;font-weight: 400;position: absolute;top: -10px;right: 55px;font-size: 26px;}
 .ap__countIncrement .ap__countName{color: #fff;font-size: 18px;font-weight: 400;}
 .ap__goalsListing{margin-top: 40px;}
 .ap__goalsListing li{margin: 0 15px;position: relative;}
-.ap__goalsListing li::before{content:'';position:absolute;top:0;left:0;border-radius:10px;background-color:#1B4624E6;height:100%;width:100%;transition:all .4s ease;z-index:1;-webkit-backface-visibility:hidden;backface-visibility:hidden;opacity:0;visibility:hidden;}
+.ap__goalsListing li::before{content:'';position:absolute;top:0;left:0;border-radius:10px;background-color:#79b62bc2;height:100%;width:100%;transition:all .4s ease;z-index:1;-webkit-backface-visibility:hidden;backface-visibility:hidden;opacity:0;visibility:hidden;}
 .ap__goalsListing li .ap__goalWrp{border-radius: 10px;overflow: hidden;}
 .ap__goalsListing li .ap__goalWrp img{max-width: 100%;}
 .ap__goalsListing li:hover::before{transform: scale(0.9);visibility: visible;opacity: 1;}
@@ -147,7 +147,7 @@ to{transform:translate3d(0,0,0);opacity:1}
 .fadeInUp{opacity:0;animation-name:fadeInUp;-webkit-animation-name:fadeInUp;}
 
 .ap__goalContents{text-align: center;top: 35%; left: 0%;;z-index: 2;width: 100%;padding: 0 30px;display: none;}
-.ap__goalContents .ap__goalTitle{color: #FF6F00;margin-bottom: 10px;}
+.ap__goalContents .ap__goalTitle{color: #003350;margin-bottom: 10px;}
 .ap__goalContents .ap__common__para{color: #fff;}
 .ap__goalsListing li:hover .ap__goalContents{display: block;}
 .ap__viewMore{margin-top: 3.75rem;}
@@ -166,7 +166,7 @@ to{transform:translate3d(0,0,0);opacity:1}
 .ap__campaignData .ap__campaignHead{font-size: 24px;}
 .ap__campaignData .ap__common__para{margin: 10px 0;}
 .ap__innerSpace{height: 260px;margin-bottom: 30px;}
-.ap__campaignData a{color: #FF6F00 !important;font-size: 14px;font-weight: 400;letter-spacing: 1px;display: inline-block;vertical-align: middle;}
+a.ap__takeAction{color: #79b62b !important;font-size: 14px;font-weight: 400;letter-spacing: 1px;display: inline-block;vertical-align: middle;}
 .ap__campaignData a span{display: inline-block;vertical-align: middle;margin-left: 5px;}
 .ap__section__7{padding:8rem 0;background-attachment:fixed;background-image:url(../images/volunteer-sect-bg.jpg);background-position:center top;background-repeat:no-repeat;background-size:cover;position:relative;}
 
@@ -175,7 +175,7 @@ to{transform:translate3d(0,0,0);opacity:1}
 .ap__section__8{margin-top: 1.5rem;}
 .ap__volunteerWrp{position: relative;z-index: 2;}
 .ap__volunteerWrp .ap__common__para{margin: 1.25rem 0 3.125rem;}
-.ap__newsLetterWrp{background-color: #FF6F00;padding: 2.5rem;border-radius: 10px;}
+.ap__newsLetterWrp{background-color: #79b62b;padding: 2.5rem;border-radius: 10px;}
 .ap__newsLetterHead{width: 40%;float: left;}
 .ap__mailTitle{display: inline-block;margin-left: 15px;}
 .ap__mailTitle span{color: #fff;}
@@ -184,15 +184,15 @@ to{transform:translate3d(0,0,0);opacity:1}
 .ap__inputDiv .ap__textInput{border: none; background-color: transparent;border-bottom: 1px solid #fafafa;padding-bottom: .75rem;font-family: 'Lato', sans-serif;font-size: 1.125rem;color: #fff;}
 .ap__inputDiv .ap__textInput::placeholder{color: #fff;}
 .ap__buttonDiv{width: calc(35% - 10px);float: right;}
-.ap__buttonDiv button{background-color: #fff;border: none;width: 100%;float: left;padding: 16px 10px;color: #FF6F00;font-size: .875rem;letter-spacing: 1px;font-weight: 400;font-family: 'Lato', sans-serif;cursor: pointer;border-radius: 5px;}
+.ap__buttonDiv button{background-color: #fff;border: none;width: 100%;float: left;padding: 16px 10px;color: #79b62b;font-size: .875rem;letter-spacing: 1px;font-weight: 400;font-family: 'Lato', sans-serif;cursor: pointer;border-radius: 5px;}
 .ap__buttonDiv button i{margin-right: 8px;}
 
-footer{padding:5rem 0 2.5rem 0;background-color: #002D12;}
+footer{padding:5rem 0 2.5rem 0;background-color: #A7AE9C;}
 .ap__footLogo{width: calc(35% - 40px);float: left;text-align: left;}
 .ap__footLogo .logoDiv{margin-bottom: .9375rem;}
 .ap__footMenuWrp{width: calc(65% - 40px);float: right;display: flex;justify-content: space-between;align-items: flex-start;flex-flow: row wrap;}
 .ap__footMenu{width: calc(33.33% - 10px);display: inline-block;}
-.ap__footMenu .ap__footHead{color:#FF9C34;font-family:"Heebo",Sans-serif;font-size:1.125rem;font-weight:600;margin-bottom: 15px;}
+.ap__footMenu .ap__footHead{color:#003350;font-family:"Heebo",Sans-serif;font-size:1.125rem;font-weight:600;margin-bottom: 15px;}
 .ap__footMenu .ap__footNav li{margin-bottom: .375rem;}
 .ap__footMenu .ap__footNav li a{color: #fff;font-size: .875rem;}
 .ap__footNav li .ap__footIco{width: 20px;display: inline-block;margin-right: .625rem;height: 20px;}
@@ -233,13 +233,22 @@ footer{padding:5rem 0 2.5rem 0;background-color: #002D12;}
 .ap__campaignDonate{border-radius: 10px;padding: 1.875rem;text-align: left;box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 10%);margin-top: -4.5rem;background-color: #fff;}
 .ap__donateBtns{margin-top: 1.25rem;}
 .ap__donateBtns a{width: calc(50% - 8px);display: inline-block;padding: 12px 10px;font-size: .875rem;text-align: center;}
-.ap__donateBtns a.ap__button__outline{border: 1px solid #FF6F00;background-color: #fff;color: #FF6F00;text-align: center;padding: 12px 10px;border-radius: 10px;transition: all 0.4s ease;}
-.ap__donateBtns a.ap__button__outline:hover{color: #fff;background-color: #FF6F00;}
+.ap__donateBtns a.ap__button__outline{border: 1px solid #79b62b;background-color: #fff;color: #79b62b;text-align: center;padding: 12px 10px;border-radius: 10px;transition: all 0.4s ease;}
+.ap__donateBtns a.ap__button__outline:hover{color: #fff;background-color: #79b62b;}
 .ap__shareDiv{margin-top: 3rem;}
 .ap__socialDiv{margin-top: 0.875rem;}
-.ap__socialDiv a{display: inline-block;width: 42px;height: 42px;border-radius: 50px;background-color: #FF6F00;text-align: center;margin-right: 12px;transition: all 0.4s ease;}
+.ap__socialDiv a{display: inline-block;width: 42px;height: 42px;border-radius: 50px;background-color: #79b62b;text-align: center;margin-right: 12px;transition: all 0.4s ease;}
 .ap__socialDiv a i{font-size: 1.25rem;color: #fff;line-height: 42px;}
-.ap__socialDiv a:hover{background-color: #E86500;}
+.ap__socialDiv a:hover{opacity: 0.8;}
+.ap__otherCampaign{margin-top: .9375rem;}
+.ap__campaignBorder{margin-top: 10px;height: 1px;background-color: #dadada;}
+.ap__otherCampList{margin-top: 1.5rem;}
+.ap__otherCampList li{margin-bottom: 1.875rem;}
+.ap__otherCampList .ap__campIco{width: 120px;overflow: hidden;border-radius: 10px;height: 120px;}
+.ap__otherCampList .ap__otherCampInfo{width: 60%;}
+.ap__otherCampList .ap__otherCampInfo .ap__common__small{margin-top: 0;margin-bottom: 0rem;}
+.ap__otherCampList .ap__otherCampInfo .ap__takeAction{margin-top: .625rem;}
+
 
 @media screen and (max-width:1400px) {
  .ap__logoDiv{width:148px;}
@@ -247,12 +256,18 @@ footer{padding:5rem 0 2.5rem 0;background-color: #002D12;}
  .ap__common__heading{font-size:40px;}
  .ap__cardItem .ap__cardTitle{font-size:1.4rem;}
  .ap__common__para{font-size: 15px;}
+ .ap__navigation .ap__navLinks a{font-size:13px;}
+ .ap__navigation .ap__navLinks{margin:0 0.6rem;}
+
 }
 @media screen and (max-width:1100px) {
  .ap__storyWrp .ap__storyCnt{width:calc(45% - 0px);}
  .ap__countIncrement li{width:calc(33.33% - 12px);}
  .ap__section__4 {height: 498px;padding: 4rem 0;}
  .ap__actionWrp .ap__actionImages{margin-top: -7.5rem;}
+ header{display: none !important;}
+ .headerMob{display: block;}
+ .ap__emptyHeight{height: 0;}
 }
 @media screen and (max-width:800px) {
   .ap__cardsList li{width: 100%;margin-bottom: 2.1875rem;}
@@ -269,12 +284,12 @@ footer{padding:5rem 0 2.5rem 0;background-color: #002D12;}
   .ap__formSubscribe{width: 100%;}
   .ap__footLogo{width: 100%;text-align: center;margin-bottom: 2.1875rem;}
   .ap__footMenuWrp{width: 100%;}
-  header{display: none !important;}
-  .headerMob{display: block;}
+
   .ap__banner__image img.ap__mob__banner{display: block;}
   .ap__banner__image img.ap__desk__banner{display: none;}
   .ap__campaignText{width: 100%; margin-bottom: 2.5rem;}
   .ap__campaignBrief{width: 100%;}
+  .ap__commentQuote{width: 15%;}
 }
 @media screen and (max-width:550px) {
  .ap__common__heading{font-size:30px;}
@@ -305,7 +320,17 @@ footer{padding:5rem 0 2.5rem 0;background-color: #002D12;}
  .ap__bannerContent{padding: 0 20px;}
  .ap__newsLetterWrp{justify-content: center !important;}
  .ap__newsLetterHead{justify-content: center;}
- section.commonMar {margin: 1rem 0 2rem;}
+ section.commonMar{margin: 1rem 0 2rem;}
  .ap__bigFnt{font-size:2.5rem;}
  .ap__campDetWrp .ap__campDetInner{width: 100%;margin-bottom: 1.5625rem;}
+ .ap__countIncrement .countNum h3{right: 100px;}
+ .ap__campaignDonate{padding:1.2rem;}
+ .ap__commentQuote img{max-width: 100%;}
+}
+
+@media screen and (max-width:360px) {
+  .ap__otherCampList .ap__campIco{width:105px;height:105px;}
+  .ap__otherCampList .ap__otherCampInfo .ap__common__small{font-size: 1.275rem;}
+  .ap__commentBox{padding:1.2rem;}
+
 }
