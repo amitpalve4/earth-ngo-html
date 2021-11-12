@@ -294,7 +294,6 @@ footer{padding:5rem 0 2.5rem 0;background-color: #A7AE9C;}
 @media screen and (max-width:550px) {
  .ap__common__heading{font-size:30px;}
  .ap__storyAbs{width:200px;left:50%;transform:translateX(-50%);top:-20px;}
- section{margin:2rem 0;}
  .ap__storyWrp .ap__storyCnt{margin-top: 0;}
  .ap__actionDiv{width:100% !important;flex-flow: row wrap;}
  .ap__videoPlay{width: 60%;margin-top: 30px;}
