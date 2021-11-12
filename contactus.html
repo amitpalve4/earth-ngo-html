@@ -5,17 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
+  <link rel="icon" href="./images/thumb.png" sizes="32x32">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/init.css">
-  <link rel="stylesheet" href="./css/nstyle.css">
   <link rel="stylesheet" href="./css/astyle.css">
+  <link rel="stylesheet" href="./css/nstyle.css">
 
 </head>
 <body>
-  <header class="col-100 floatLft flexDisplay justifyCenter">
+  <header class="col-100 floatLft flexDisplay justifyCenter deskHeader">
     <div class="wrapper">
         <div class="headWrp col-100 floatLft flexDisplay alignCenter justifySpace">
-            <div class="ap__logoDiv floatLft"><a href="javascript:;"><img src="./images/logo-1.png" alt="Logo" /></a></div>
+            <div class="ap__logoDiv floatLft"><a href="index.html"><img src="./images/logo-1.png" alt="Logo" /></a></div>
             <nav class="floatRgt">
                 <ul class="ap__navigation">
                     <li class="ap__navLinks inlineBlk active">
@@ -34,8 +35,17 @@
                             </div>
                         </div>
                     </li>
-                    <li class="ap__navLinks inlineBlk">
-                        <a href="javascript:;" class="ap__navClick">Pages</a>
+                    <li class="ap__navLinks ap__dropParent inlineBlk relative">
+                        <a href="javascript:;" class="ap__navClick">Pages <i class="fa fa-angle-down"></i></a>
+                        <div class="ap__dropMenu absolute">
+                            <div class="ap__emptyHeight col-100 floatLft"></div>
+                            <div class="ap__dropInner col-100 floatLft">
+                                <a href="javascript:;" class="ap__dropInnerLink">FAQ</a>
+                                <a href="javascript:;" class="ap__dropInnerLink">Privacy Policy</a>
+                                <a href="javascript:;" class="ap__dropInnerLink">Terms & Conditions</a>
+                                <a href="javascript:;" class="ap__dropInnerLink">News</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="ap__navLinks inlineBlk">
                         <a href="javascript:;" class="ap__navClick">Contact us</a>
@@ -48,6 +58,59 @@
         </div>
     </div>
 </header>
+
+<div class="headerMob">
+    <div class="logoDiv">
+        <a href="index.html"><img src="./images/logo-1.png" alt=""></a>
+    </div>
+    <span class="toggle-button">
+        <div class="menu-bar menu-bar-top"></div>
+        <div class="menu-bar menu-bar-middle"></div>
+        <div class="menu-bar menu-bar-bottom"></div>
+    </span>
+
+    <div class="menu-wrap">
+        <div class="menu-sidebar">
+            <div class="navMenu">
+                <ul class="navMenu">
+                    <li class="ap__navLinks inlineBlk mainDrop">
+                        <a href="javascript:;" class="ap__navClick active">Home</a>
+                    </li>
+                    <li class="ap__navLinks inlineBlk mainDrop">
+                        <a href="javascript:;" class="ap__navClick">About us</a>
+                    </li>
+                    <li class="ap__navLinks ap__dropParent inlineBlk relative mainDrop">
+                        <a href="javascript:;" class="ap__navClick">Compaign <i class="fa fa-angle-down"></i></a>
+                        <div class="ap__dropMenu ap__mobile relative">
+                            <div class="ap__dropInner col-100 floatLft">
+                                <a href="javascript:;" class="ap__dropInnerLink">Campaign Details</a>
+                                <a href="javascript:;" class="ap__dropInnerLink">Campaign Gallery</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ap__navLinks ap__dropParent inlineBlk relative mainDrop">
+                        <a href="javascript:;" class="ap__navClick">Pages <i class="fa fa-angle-down"></i></a>
+                        <div class="ap__dropMenu ap__mobile relative">
+                            <div class="ap__dropInner col-100 floatLft">
+                                <a href="javascript:;" class="ap__dropInnerLink">FAQ</a>
+                                <a href="javascript:;" class="ap__dropInnerLink">Privacy Policy</a>
+                                <a href="javascript:;" class="ap__dropInnerLink">Terms & Conditions</a>
+                                <a href="javascript:;" class="ap__dropInnerLink">News</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ap__navLinks inlineBlk mainDrop">
+                        <a href="javascript:;" class="ap__navClick">Contact us</a>
+                    </li>
+                    <li class="ap__navLinks inlineBlk">
+                        <a href="javascript:;" class="ap__navClick ap__navButton">Donate</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
   <main>
     <section class="np-bannerSec col-100 floatLft relative">
       <div class="np-bannerSec__bg np-bannerSec__bg--height col-100 floatLft flexDisplay justifyCenter alignCenter relative">
@@ -67,39 +130,106 @@
               <div class="np-contentSec--lftWrp col-100 floatLft">
                 <p class="ap__common__heading mar--b">Get In Touch</p>
                 <p class="np-disc mar--b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos ipsa voluptatum delectus nihil accusantium quo illum nemo impedit eaque assumenda, beatae, modi, eos sint aut? Labore possimus praesentium qui?</p>
-
-                <div class="np-contentSec--inner col-100 floatLft flexDisplay justifySpace">
+                <!-- <div class="np-contentSec--inner col-100 floatLft flexDisplay justifySpace"> -->
                   <div class="np-contentSec--innerLft col-100 floatLft">
+                    <div class="np-contentSec--innerLftWrp col-100 floatLft">
                       <p class="ap__common__heading np-small__heading mar--b">Office, Renon</p>
-                      <ul>
-                        <li>
-                          <div class="np-contentSec--add col-100 floatLft flexDisplay alignCenter">
-                            <i class="fa fa-map-marker org" aria-hidden="true"></i>
-                            <p class="np-address gry">Jl. Niti Mandala, Renon, Bali, Indonesia – 80225</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="np-contentSec--ph col-100 floatLft flexDisplay alignCenter">
-                            <i class="fa fa-phone org" aria-hidden="true"></i>
-                            <p class="np-ph gry">(+62) 8152 254 239</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="np-contentSec--mai col-100 floatLft flexDisplay alignCenter">
-                            <i class="fa fa-envelope-o org" aria-hidden="true"></i>
-                            <p class="np-mai gry">Jl. Niti Mandala, Renon, Bali, Indonesia – 80225</p>
-                          </div>
-                        </li>
-                      </ul>
+                        <ul>
+                          <li>
+                            <div class="np-contentSec--add paa-b col-100 floatLft flexDisplay alignStart">
+                              <div class="ap__footIco"><img src="./images/map.png" alt=""></div>
+                              <p class="np-address gry">301, 3rd Floor,Tirupati Co-operative Housing Society Ltd, Opp. Mumbai University Main Gate, Vidyanagari Marg, (CST Road), Kalina, Santacruz (East), Mumbai - 400 098.</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="np-contentSec--ph paa-b mar-t col-100 floatLft flexDisplay alignStart">
+                              <div class="ap__footIco"><img src="./images/call.png" alt=""></div>
+                              <p class="np-ph gry">+91 84969 84969</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="np-contentSec--mai mar-t col-100 floatLft flexDisplay alignStart">
+                              <div class="ap__footIco"><img src="./images/email-small.png" alt=""></div>
+                              <p class="np-mai gry">connect@earthngo.org</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
                   </div>
-                  <div class="np-contentSec--innerRgt col-100 floatLft">
+                  <!-- <div class="np-contentSec--innerRgt col-100 floatLft">
+                    <div class="np-contentSec--innerRgtWrp col-100 floatLft">
                       <p class="ap__common__heading np-small__heading mar--b">Basecamp, Kuta</p>
-                  </div>
-                </div>
+                        <ul>
+                          <li>
+                            <div class="np-contentSec--add paa-b col-100 floatLft flexDisplay alignCenter">
+                              <div class="ap__footIco"><img src="./images/map.png" alt=""></div>
+                              <p class="np-address gry">Jl. Sunset Road No.815, Kuta, Bali 80361</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="np-contentSec--ph paa-b mar-t col-100 floatLft flexDisplay alignCenter">
+                              <div class="ap__footIco"><img src="./images/call.png" alt=""></div>
+                              <p class="np-ph gry">(+62) 8152 254 239</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="np-contentSec--mai mar-t col-100 floatLft flexDisplay alignCenter">
+                              <div class="ap__footIco"><img src="./images/email-small.png" alt=""></div>
+                              <p class="np-mai gry">contact@domain.com</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                  </div> -->
+                <!-- </div> -->
               </div>
             </div>
             <div class="np-contentSec--rgt col-100 floatLft">
+              <div class="np-contentSec--rgtWrp">
+                  <div class="np-contentSec--rgt__contaner col-100 floatLft">
+                    <form class="np-form col-100 floatLft">
+                      <section class="np-formSec col-100 floatLft">
+                        <div class="np-formSec__content col-100 floatLft">
+                          <div class="np-formSec__Wrp col-100 floatLft">
+                              <section class="np--form__flname col-100 floatLft">
+                                <div class="np--form__flnameWrp">
+                                  <div class="np--form__fname ">
+                                    <div class="np--form__fnameCont col-50 floatLft">
+                                      <div class="np--form__fnameWrp">
+                                        <input type="text" class="np--form__fnameInp col-100 floatLft" id="fnameInp" name="np--form__fnameInp" placeholder="First Name " aria-invalid="false">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="np--form__fname">
+                                    <div class="np--form__fnameCont col-50 floatLft">
+                                      <div class="np--form__lnameWrp">
+                                        <input type="text" class="np--form__fnameInp col-100 floatLft" id="lnameInp" name="np--form__fnameInp" placeholder="Last Name " aria-invalid="false">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
 
+                              <div class="np--form__Mail col-100 floatLft">
+                                <input type="mail" class="np--form__fnameInp col-100 floatLft" id="emailInp" name="np--form__fnameInp" placeholder="Your Email" aria-invalid="false">
+                              </div>
+                              <div class="np--form__Mail col-100 floatLft">
+                                <input type="mail" class="np--form__fnameInp col-100 floatLft" id="phnInp" name="np--form__phnInp" placeholder="Your Phone" aria-invalid="false">
+                              </div>
+                              <div class="np--form__Mail col-100 floatLft">
+                                <textarea class="np--form__fnameInp col-100 floatLft " id="msgInp" name="np--form__msgInp" placeholder="Your message " cols="30" rows="10" aria-invalid="false"></textarea>
+                              </div>
+                              <div class="np--formBtn col-100 floatLft">
+                                <button type="submit" class="np--formBtn--b col-100 floatLft" id=""><span>send message </span></button>
+                              </div>
+                          </div>
+                        </div>
+                      </section>
+                    </form>
+                  </div>
+              </div>
             </div>
           </div>
 
@@ -107,6 +237,104 @@
       </div>
 
     </section>
+
+    <section class="ap__section__8 commonMar col-100 floatLft flexDisplay justifyCenter">
+      <div class="wrapper">
+          <div class="ap__newsLetterWrp col-100 floatLft flexDisplay justifySpace alignCenter flexWrap">
+              <div class="ap__newsLetterHead flexDisplay justifyStart alignCenter">
+                  <div class="ap__mailIco"><img src="./images/email.png" alt=""></div>
+                  <div class="ap__mailTitle">
+                      <span>Keep Updated</span>
+                      <h2 class="ap__common__heading ap__whtPara">Newsletter</h2>
+                  </div>
+              </div>
+              <div class="ap__formSubscribe">
+                  <div class="ap__inputDiv">
+                      <input type="text" class="ap__textInput col-100 floatLft" placeholder="Email">
+                  </div>
+                  <div class="ap__buttonDiv">
+                      <button><i class="fa fa-paper-plane" aria-hidden="true"></i> SUBSCRIBE</button>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section>
+
   </main>
+
+
+  <footer class="col-100 floatLft flexDisplay justifyCenter">
+    <div class="wrapper">
+        <div class="ap__footInner col-100 floatLft flexDisplay justifySpace alignStart flexWrap">
+            <div class="ap__footLogo">
+                <div class="logoDiv"><img src="./images/logo-1.png" alt=""></div>
+                <p class="ap__whtPara ap__common__para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            </div>
+            <div class="ap__footMenuWrp">
+                <div class="ap__footMenu">
+                    <h3 class="ap__footHead">Quick Links</h3>
+                    <ul class="ap__footNav col-100 floatLft">
+                        <li>
+                            <a href="javascript:;">Home</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">About us</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Destination</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ap__footMenu">
+                    <h3 class="ap__footHead">Other Pages</h3>
+                    <ul class="ap__footNav col-100 floatLft">
+                        <li>
+                            <a href="javascript:;">Privacy & Policy</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ap__footMenu">
+                    <h3 class="ap__footHead">Contact Info</h3>
+                    <ul class="ap__footNav col-100 floatLft">
+                        <li class="flexDisplay justifyStart alignStart">
+                            <div class="ap__footIco"><img src="./images/map.png" alt=""></div>
+                            <div class="ap__addText ap__whtPara">301, 3rd Floor,Tirupati Co-operative Housing Society Ltd, Opp. Mumbai University Main Gate, Vidyanagari Marg, (CST Road), Kalina, Santacruz (East), Mumbai - 400 098.</div>
+                        </li>
+                        <li class="flexDisplay justifyStart alignCenter">
+                            <div class="ap__footIco"><img src="./images/call.png" alt=""></div>
+                            <div class="ap__addText"><a href="tel:+91 84969 84969">+91 84969 84969</a></div>
+                        </li>
+                        <li class="flexDisplay justifyStart alignCenter">
+                            <div class="ap__footIco"><img src="./images/email-small.png" alt=""></div>
+                            <div class="ap__addText"><a href="mailto:connect@earthngo.org">connect@earthngo.org</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ap__footCopy col-100 floatLft flexDisplay justifySpace">
+            <p class="ap__whtPara">Environmental & NGO Template Kit by Jegtheme</p>
+            <p class="ap__whtPara">© 2021. Company Name. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
 </body>
+
+<script src="./js/jQuery/jquery-3.6.min.js"></script>
+    <script src="./js/slick-slider/slick.min.js"></script>
+    <script src="./js/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./js/site.ap.js"></script>
 </html>
