@@ -273,6 +273,8 @@ footer{padding:5rem 0 2.5rem 0;background-color: #002D12;}
   .headerMob{display: block;}
   .ap__banner__image img.ap__mob__banner{display: block;}
   .ap__banner__image img.ap__desk__banner{display: none;}
+  .ap__campaignText{width: 100%; margin-bottom: 2.5rem;}
+  .ap__campaignBrief{width: 100%;}
 }
 @media screen and (max-width:550px) {
  .ap__common__heading{font-size:30px;}
@@ -305,5 +307,5 @@ footer{padding:5rem 0 2.5rem 0;background-color: #002D12;}
  .ap__newsLetterHead{justify-content: center;}
  section.commonMar {margin: 1rem 0 2rem;}
  .ap__bigFnt{font-size:2.5rem;}
-
+ .ap__campDetWrp .ap__campDetInner{width: 100%;margin-bottom: 1.5625rem;}
 }
