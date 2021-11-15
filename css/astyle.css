@@ -134,7 +134,7 @@ section.commonMar{margin: 4rem 0;}
 .ap__goalsListing li{margin: 0 15px;position: relative;}
 .ap__goalsListing li::before{content:'';position:absolute;top:0;left:0;border-radius:10px;background-color:#79b62bc2;height:100%;width:100%;transition:all .4s ease;z-index:1;-webkit-backface-visibility:hidden;backface-visibility:hidden;opacity:0;visibility:hidden;}
 .ap__goalsListing li .ap__goalWrp{border-radius: 10px;overflow: hidden;}
-.ap__goalsListing li .ap__goalWrp img{max-width: 100%;}
+.ap__goalsListing li .ap__goalWrp img{max-width: 100%;border-radius: 10px;}
 .ap__goalsListing li:hover::before{transform: scale(0.9);visibility: visible;opacity: 1;}
 @keyframes fadeInUp{from{transform:translate3d(0,40px,0)}
 to{transform:translate3d(0,0,0);opacity:1}
@@ -248,7 +248,9 @@ footer{padding:5rem 0 2.5rem 0;background-color: #A7AE9C;}
 .ap__otherCampList .ap__otherCampInfo{width: 60%;}
 .ap__otherCampList .ap__otherCampInfo .ap__common__small{margin-top: 0;margin-bottom: 0rem;}
 .ap__otherCampList .ap__otherCampInfo .ap__takeAction{margin-top: .625rem;}
+.ap__campaignListing.ap__campaignPage li{margin-bottom: 30px;}
 
+.ap__goalsListing.ap__goalsDetails li{width: calc(33.33% - 20px);display: inline-block;margin: 0; margin-bottom: 30px;}
 
 @media screen and (max-width:1400px) {
  .ap__logoDiv{width:148px;}

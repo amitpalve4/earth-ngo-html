@@ -81,7 +81,7 @@ $(document).ready(function(){
     });
   }
 
-  if($('.ap__goalsListing').length > 0){
+  if($('.ap__goalsSlider').length > 0){
     $('.ap__goalsListing').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
