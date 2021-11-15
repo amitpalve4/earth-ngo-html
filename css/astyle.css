@@ -161,7 +161,7 @@ to{transform:translate3d(0,0,0);opacity:1}
 .ap__campaignWrp.ap__camp__2{background: url(../images/campaign-2.jpg) no-repeat center center/cover;}
 .ap__campaignWrp.ap__camp__3{background: url(../images/campaign-3.jpg) no-repeat center center/cover;}
 .ap__campaignWrp.ap__camp__4{background: url(../images/campaign-4.jpg) no-repeat center center/cover;}
-.ap__campaignWrp::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;z-index: 1; transition: background 0.3s, border-radius 0.3s, opacity 0.3s;visibility: hidden;opacity: 0;}
+.ap__campaignWrp::after{content: '';position: absolute;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;z-index: 1; transition: background 0.3s, border-radius 0.3s, opacity 0.3s;visibility: hidden;opacity: 0;border-radius: 20px;}
 .ap__campaignWrp:hover::after{visibility: visible;opacity: 1;}
 .ap__campaignData .ap__campaignHead{font-size: 24px;}
 .ap__campaignData .ap__common__para{margin: 10px 0;}
@@ -249,7 +249,6 @@ footer{padding:5rem 0 2.5rem 0;background-color: #A7AE9C;}
 .ap__otherCampList .ap__otherCampInfo .ap__common__small{margin-top: 0;margin-bottom: 0rem;}
 .ap__otherCampList .ap__otherCampInfo .ap__takeAction{margin-top: .625rem;}
 .ap__campaignListing.ap__campaignPage li{margin-bottom: 30px;}
-
 .ap__goalsListing.ap__goalsDetails li{width: calc(33.33% - 20px);display: inline-block;margin: 0; margin-bottom: 30px;}
 
 @media screen and (max-width:1400px) {
