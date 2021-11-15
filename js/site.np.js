@@ -77,4 +77,12 @@ $(document).ready(function(){
   }
 
 
+  if($('#myDatePicker').length > 0){
+    flatpickr('#myDatePicker', {
+      "minDate": new Date().fp_incr(1),
+      dateFormat: "d - m - Y"
+  });
+
+  }
+
 });
