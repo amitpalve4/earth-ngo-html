@@ -329,7 +329,7 @@ footer{padding:5rem 0 2.5rem 0;background-color: #A7AE9C;}
  .ap__countIncrement .countNum h3{right: 100px;}
  .ap__campaignDonate{padding:1.2rem;}
  .ap__commentQuote img{max-width: 100%;}
- .ap__goalsListing.ap__goalsDetails li{width:100%}
+ .ap__goalsListing.ap__goalsDetails li{width:100%;}
 }
 
 @media screen and (max-width:360px) {
