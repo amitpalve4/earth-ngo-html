@@ -683,6 +683,13 @@ img.mfp-img {
 max-width: 100%;
 height: 450px;
 }
+.fa-angle-double-right{
+  padding-right: 10px;
+  color: #79b62b;
+}
+.np-contentSec--lftWrp .np-vimg{
+  width: 100%;
+}
 @media screen and (max-width:1024px){
   .np-gallary__tabContant--list li a{
     height:250px;
@@ -738,9 +745,7 @@ height: 450px;
   .np-contentSec{
     padding:40px 10px 80px 10px;
   }
-  .np-contentSec .wrapper{
-    padding:0;
-  }
+
   .np--form__fnameCont{
     width:100%;
   }
